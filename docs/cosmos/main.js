@@ -7651,8 +7651,8 @@ var AuthStates = {
   newPasswordRequired: 'newPasswordRequired' // Need to supply a mapbox token (it's not secret. Putting it in git is fine)
 
 };
-var mapBoxToken = Object({"NODE_ENV":"production","PUBLIC_URL":"","REACT_APP_GRAPHQL":"https://jelwrai7pjcr5e2lmfskr5zpzq.appsync-api.us-west-2.amazonaws.com/graphql","REACT_APP_AWS_REGION":"us-west-2","REACT_APP_API_KEY":"m4dcwk5b75fwxl5zen63wjeaou","REACT_APP_COGNITO_CLIENT":"2kbuh7kcl2miv96ctdao340s4t","REACT_APP_MAPBOX_TOKEN":"pk.eyJ1IjoicmF5Y2hhc2VyIiwiYSI6IlFHWHVMSW8ifQ.emd44Ibp4cmT9YXitY1ziw","REACT_APP_USER_POOL_ID":"us-west-2_xuI6sjGDF","REACT_APP_DOMAIN":"https://northarrowresearchlabs.github.io","REACT_APP_COOKIEPATH":"/BDAPOC"}).REACT_APP_MAPBOXTOKEN;
-var domain = "https://northarrowresearchlabs.github.io";
+var mapBoxToken = Object({"NODE_ENV":"production","PUBLIC_URL":"","REACT_APP_GRAPHQL":"https://jelwrai7pjcr5e2lmfskr5zpzq.appsync-api.us-west-2.amazonaws.com/graphql","REACT_APP_AWS_REGION":"us-west-2","REACT_APP_API_KEY":"m4dcwk5b75fwxl5zen63wjeaou","REACT_APP_COGNITO_CLIENT":"2kbuh7kcl2miv96ctdao340s4t","REACT_APP_MAPBOX_TOKEN":"pk.eyJ1IjoicmF5Y2hhc2VyIiwiYSI6IlFHWHVMSW8ifQ.emd44Ibp4cmT9YXitY1ziw","REACT_APP_USER_POOL_ID":"us-west-2_xuI6sjGDF","REACT_APP_DOMAIN":"northarrowresearchlabs.github.io","REACT_APP_COOKIEPATH":"/BDAPOC"}).REACT_APP_MAPBOXTOKEN;
+var domain = "northarrowresearchlabs.github.io";
 
 if (false) {}
 
