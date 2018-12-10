@@ -907,7 +907,7 @@ var Topbar = function Topbar(_ref) {
     onClick: function onClick() {
       aws_amplify__WEBPACK_IMPORTED_MODULE_1__["Auth"].signOut(); // This is a hack to force the page to refresh
 
-      window.location.replace('/');
+      window.location.replace(window.location);
     }
   }))));
 };
