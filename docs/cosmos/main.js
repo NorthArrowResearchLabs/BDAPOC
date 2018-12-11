@@ -159,7 +159,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "#root, .awsappsync, .awsappsync>div {\n  height: 100%;\n  width: 100%;\n}\n\n.appContainer{\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\n.appContainer>.menu{\n  flex: 0 0;\n}\n\n.appContainer>.tabContainer{\n  flex: 1 1;\n  display: flex;\n  flex-direction: column;\n}\n.appContainer>.tabContainer>.menu{\n  flex: 0 0 70px;\n}\n.appContainer>.tabContainer>.ui.segment{\n  flex: 1 1;\n  overflow: hidden;\n  padding: 0;\n}\n.appContainer>.tabContainer>.ui.segment>.structureList{\n  overflow: scroll;\n  overflow-x: hidden;\n  height: 100%;\n}\n\n.homeIcons {\n  position: absolute;\n  bottom: 1rem;\n  right: 1rem;\n}\n\n.homepageListItem{\n  position: relative;\n}\n\n\n.presentForm .section .ui.header {\n  border-bottom: 2px solid #AAAAAA;\n}\n.presentForm .item .content .header{\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #DDDDDD;\n}\n\n.presentForm .item .content .description{\n  margin-bottom: 1rem;\n}\n\n.ui.addButton.button {\n  position: absolute;\n  bottom: 2rem;\n  right: 2rem;\n  font-size: 2.0rem;\n  box-shadow: 1px 1px 5px rgba(0,0,0, 0.5)!important;\n}\n\n/**\nTighten up the form layout\n**/\n.ui.segment.BDAFormField {\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n}\n.BDAFormField .ui.header{\n  -webkit-font-feature-settings: \"c2sc\";\n          font-feature-settings: \"c2sc\";\n  font-variant: small-caps;  \n}", ""]);
+exports.push([module.i, "#root, .awsappsync, .awsappsync>div {\n  height: 100%;\n  width: 100%;\n}\n\n.appContainer{\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\n.appContainer>.menu{\n  flex: 0 0;\n}\n\n.appContainer>.tabContainer{\n  flex: 1 1;\n  display: flex;\n  flex-direction: column;\n}\n.appContainer>.tabContainer>.menu{\n  flex: 0 0 70px;\n}\n.appContainer>.tabContainer>.ui.segment{\n  flex: 1 1;\n  overflow: hidden;\n  padding: 0;\n}\n.appContainer>.tabContainer>.ui.segment>.structureList{\n  overflow: scroll;\n  overflow-y: scroll;\n  overflow-x: hidden;\n  -webkit-overflow-scrolling: touch;\n  height: 100%;\n}\n\n.homeIcons {\n  position: absolute;\n  bottom: 1rem;\n  right: 1rem;\n}\n\n.homepageListItem{\n  position: relative;\n}\n\n.presentForm {\n  margin-top: 0;\n  overflow: scroll;\n  overflow-y: scroll;\n  overflow-x: hidden;\n  -webkit-overflow-scrolling: touch;\n}\n\n.formPusher {\n  margin-top: 40px;\n  margin-bottom: 80px;\n  overflow-y: scroll;\n  overflow-x: hidden;\n  -webkit-overflow-scrolling: touch;\n}\n\n.presentForm .section .ui.header {\n  border-bottom: 2px solid #AAAAAA;\n}\n.presentForm .item .content .header{\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #DDDDDD;\n}\n\n.presentForm .item .content .description{\n  margin-bottom: 1rem;\n}\n\n.ui.addButton.button {\n  position: absolute;\n  bottom: 2rem;\n  right: 2rem;\n  font-size: 2.0rem;\n  box-shadow: 1px 1px 5px rgba(0,0,0, 0.5)!important;\n}\n\n/**\nTighten up the form layout\n**/\n.ui.segment.BDAFormField {\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n}\n.BDAFormField .ui.header{\n  -webkit-font-feature-settings: \"c2sc\";\n          font-feature-settings: \"c2sc\";\n  font-variant: small-caps;  \n}", ""]);
 
 // exports
 
@@ -4941,10 +4941,6 @@ var StructureViewer = function StructureViewer(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "appContainer"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Topbar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"], {
-    style: {
-      marginTop: 0,
-      overflow: 'scroll'
-    },
     className: "presentForm"
   }, _sections__WEBPACK_IMPORTED_MODULE_7__["default"].map(function (item, idx) {
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -5067,9 +5063,7 @@ var TheFormComplex = function TheFormComplex(_ref) {
       sidebarVisible = _ref.sidebarVisible,
       getValueProps = _ref.getValueProps,
       setSidebarVisible = _ref.setSidebarVisible,
-      setActiveStep = _ref.setActiveStep,
-      setValue = _ref.setValue,
-      setNote = _ref.setNote;
+      setActiveStep = _ref.setActiveStep;
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     style: {
       height: '100%'
@@ -5101,10 +5095,7 @@ var TheFormComplex = function TheFormComplex(_ref) {
     size: "mini",
     fluid: true
   }, stepHeaders)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Sidebar"].Pusher, {
-    style: {
-      marginTop: '40px',
-      marginBottom: '80px'
-    }
+    className: "formPusher"
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Dimmer"].Dimmable, {
     as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Segment"],
     attached: true,
