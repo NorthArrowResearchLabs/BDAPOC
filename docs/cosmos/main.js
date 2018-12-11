@@ -147,25 +147,6 @@ exports.push([module.i, ".sliderWrapper{\n  height: 42px;\n  position: relative;
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/BDAMobile/sections/TheFormComplex.css":
-/*!*****************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/BDAMobile/sections/TheFormComplex.css ***!
-  \*****************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".theFormComplexMenu {\n  border: 1px solid red;\n}", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/BDAMobile/views/Homepage.css":
 /*!********************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/BDAMobile/views/Homepage.css ***!
@@ -178,7 +159,26 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "#root, .awsappsync, .awsappsync>div {\n  height: 100%;\n}\n\n.appContainer{\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\n.appContainer>.menu{\n  flex: 0 0;\n}\n\n.appContainer>.tabContainer{\n  flex: 1 1;\n  display: flex;\n  flex-direction: column;\n}\n.appContainer>.tabContainer>.menu{\n  flex: 0 0;\n}\n.appContainer>.tabContainer>.ui.segment{\n  flex: 1 1;\n  overflow: hidden;\n  padding: 0;\n}\n.appContainer>.tabContainer>.ui.segment>.structureList{\n  overflow: scroll;\n  overflow-x: hidden;\n  height: 100%;\n}\n\n.homeIcons {\n  position: absolute;\n  bottom: 1rem;\n  right: 1rem;\n}\n\n.homepageListItem{\n  position: relative;\n}\n\n.presentForm .item .content .header{\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #AAAAAA;\n}\n\n.presentForm .item .content .description{\n  margin-bottom: 1rem;\n}\n\n.ui.addButton.button {\n  position: absolute;\n  bottom: 2rem;\n  right: 2rem;\n  font-size: 2.0rem;\n  box-shadow: 1px 1px 5px rgba(0,0,0, 0.5)!important;\n}", ""]);
+exports.push([module.i, "#root, .awsappsync, .awsappsync>div {\n  height: 100%;\n  width: 100%;\n}\n\n.appContainer{\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\n.appContainer>.menu{\n  flex: 0 0;\n}\n\n.appContainer>.tabContainer{\n  flex: 1 1;\n  display: flex;\n  flex-direction: column;\n}\n.appContainer>.tabContainer>.menu{\n  flex: 0 0 70px;\n}\n.appContainer>.tabContainer>.ui.segment{\n  flex: 1 1;\n  overflow: hidden;\n  padding: 0;\n}\n.appContainer>.tabContainer>.ui.segment>.structureList{\n  overflow: scroll;\n  overflow-x: hidden;\n  height: 100%;\n}\n\n.homeIcons {\n  position: absolute;\n  bottom: 1rem;\n  right: 1rem;\n}\n\n.homepageListItem{\n  position: relative;\n}\n\n\n.presentForm .section .ui.header {\n  border-bottom: 2px solid #AAAAAA;\n}\n.presentForm .item .content .header{\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #DDDDDD;\n}\n\n.presentForm .item .content .description{\n  margin-bottom: 1rem;\n}\n\n.ui.addButton.button {\n  position: absolute;\n  bottom: 2rem;\n  right: 2rem;\n  font-size: 2.0rem;\n  box-shadow: 1px 1px 5px rgba(0,0,0, 0.5)!important;\n}\n\n/**\nTighten up the form layout\n**/\n.ui.segment.BDAFormField {\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n}\n.BDAFormField .ui.header{\n  -webkit-font-feature-settings: \"c2sc\";\n          font-feature-settings: \"c2sc\";\n  font-variant: small-caps;  \n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/BDAMobile/views/TheFormComplex.css":
+/*!**************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/components/BDAMobile/views/TheFormComplex.css ***!
+  \**************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".theFormComplexMenu {\n  border: 1px solid red;\n}", ""]);
 
 // exports
 
@@ -467,7 +467,9 @@ var FeedItemPost = function FeedItemPost(_ref2) {
   var profile = _ref2.profile;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Event, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Label, {
     image: profile.avatar
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Summary, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, profile.name), " posted on their page", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Date, null, lodash__WEBPACK_IMPORTED_MODULE_5___default.a.random(1, 10), " days ago")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Extra, {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Summary, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "./"
+  }, profile.name), " posted on their page", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Date, null, lodash__WEBPACK_IMPORTED_MODULE_5___default.a.random(1, 10), " days ago")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Extra, {
     text: true
   }, faker__WEBPACK_IMPORTED_MODULE_3__["lorem"].paragraph()), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RandomLikes, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Divider"], null)));
 };
@@ -483,12 +485,18 @@ var FeedItemAddBDA = function FeedItemAddBDA(_ref4) {
   var profile = _ref4.profile;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Event, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Label, {
     image: profile.avatar
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Summary, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, profile.name), " discovered ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, profile.bdas.length, " new dams"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Date, null, lodash__WEBPACK_IMPORTED_MODULE_5___default.a.random(1, 10), " days ago")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Extra, {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Summary, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "./"
+  }, profile.name), " discovered ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "./"
+  }, profile.bdas.length, " new dams"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Date, null, lodash__WEBPACK_IMPORTED_MODULE_5___default.a.random(1, 10), " days ago")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Feed"].Extra, {
     images: true
   }, profile.bdas.map(function (bda, idx) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      key: "".concat(profile.name).concat(idx)
+      key: "".concat(profile.name).concat(idx),
+      href: "./"
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      alt: "thing",
       src: bda
     }));
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RandomLikes, null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Divider"], null)));
@@ -870,11 +878,8 @@ FormWrapper.displayName = 'Form';
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib/index.js");
-/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(aws_amplify__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../redux/withRedux */ "./src/redux/withRedux.js");
-
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../redux/withRedux */ "./src/redux/withRedux.js");
 
 
 
@@ -882,37 +887,26 @@ __webpack_require__.r(__webpack_exports__);
 var Topbar = function Topbar(_ref) {
   var editing = _ref.editing,
       backToHome = _ref.backToHome;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"], {
     icon: true,
     inverted: true,
     style: {
-      borderRadius: 0
+      borderRadius: 0,
+      marginBottom: 0
     }
-  }, editing && editing.guid ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
+  }, editing && editing.guid ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
     name: "bars",
     onClick: function onClick() {
       return backToHome();
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Icon"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
     name: "arrow left"
-  })) : null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, {
+  })) : null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
     header: true
-  }, "Project Homepage"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Menu, {
-    position: "right"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    color: "yellow",
-    icon: "lock open",
-    inverted: true,
-    content: "Log out",
-    onClick: function onClick() {
-      aws_amplify__WEBPACK_IMPORTED_MODULE_1__["Auth"].signOut(); // This is a hack to force the page to refresh
-
-      window.location.replace(window.location);
-    }
-  }))));
+  }, "Project Homepage"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Topbar);
+/* harmony default export */ __webpack_exports__["default"] = (Object(_redux_withRedux__WEBPACK_IMPORTED_MODULE_2__["withReduxHome"])(Topbar));
 
 /***/ }),
 
@@ -929,12 +923,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var _graphql_queries__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../graphql/queries */ "./src/graphql/queries.js");
+/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+
+
 
 
 
 
 var AddButton = function AddButton(_ref) {
-  var createStructure = _ref.createStructure;
+  var createStructure = _ref.createStructure,
+      editStructure = _ref.editStructure;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Button"], {
     className: "addButton",
     icon: "plus",
@@ -944,12 +943,16 @@ var AddButton = function AddButton(_ref) {
       e.preventDefault();
       createStructure({
         body: '{}'
-      });
+      }).then(function (res) {
+        try {
+          editStructure(res.data.createBDAPOC.id);
+        } catch (e) {}
+      }); //
     }
   });
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_graphql_queries__WEBPACK_IMPORTED_MODULE_2__["withCreateStructure"])(AddButton));
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])(_graphql_queries__WEBPACK_IMPORTED_MODULE_2__["withCreateStructure"], _redux_withRedux__WEBPACK_IMPORTED_MODULE_3__["withReduxHome"])(AddButton));
 
 /***/ }),
 
@@ -975,7 +978,8 @@ var RefreshStockButton = function RefreshStockButton(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Button"], {
     className: "refreshButton",
     icon: "refresh",
-    content: "Clear and refresh stock structures",
+    size: "large",
+    content: "Add Demo Records",
     fluid: true,
     color: "red",
     onClick: function onClick(e) {
@@ -1058,8 +1062,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_swipeable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-swipeable */ "./node_modules/react-swipeable/lib/Swipeable.js");
 /* harmony import */ var react_swipeable__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_swipeable__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _graphql_queries__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../graphql/queries */ "./src/graphql/queries.js");
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../redux/withRedux */ "./src/redux/withRedux.js");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+
 
 
 
@@ -1074,47 +1080,73 @@ var StructureListItem = function StructureListItem(_ref) {
       body = _ref$structure.body,
       color = _ref.color,
       sidebarVisible = _ref.sidebarVisible,
-      openMenu = _ref.openMenu,
-      closeMenu = _ref.closeMenu,
+      onSwipedRight = _ref.onSwipedRight,
+      onSwipedLeft = _ref.onSwipedLeft,
+      editClick = _ref.editClick,
       itemClick = _ref.itemClick,
       localOnly = _ref.localOnly,
       deleteConfirmVisible = _ref.deleteConfirmVisible,
       deleteClick = _ref.deleteClick,
       deleteCancel = _ref.deleteCancel,
       deleteConfirm = _ref.deleteConfirm;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Sidebar"].Pushable, {
-    as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["List"].Item
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Sidebar"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Sidebar"].Pushable, {
+    as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["List"].Item
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Sidebar"], {
+    style: {
+      overflow: 'hidden'
+    },
     animation: "push",
-    as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"],
+    as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Menu"],
     icon: "labeled",
     inverted: true,
     direction: "right",
     color: "red",
-    width: "thin",
-    visible: sidebarVisible
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Item, {
-    onClick: deleteClick
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Icon"], {
+    width: "very thin",
+    visible: sidebarVisible === SIDEBARS.DELETE
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Menu"].Item, {
+    onClick: deleteClick,
+    style: {
+      minWidth: '4em'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Icon"], {
     name: "trash"
-  }), " Delete")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Sidebar"].Pusher, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_swipeable__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    onSwipedLeft: openMenu,
-    onSwipedRight: closeMenu
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Segment"], {
+  }), " Delete")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Sidebar"], {
+    style: {
+      overflow: 'hidden'
+    },
+    animation: "push",
+    as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Menu"],
+    icon: "labeled",
+    inverted: true,
+    direction: "left",
+    color: "blue",
+    width: "very thin",
+    visible: sidebarVisible === SIDEBARS.EDIT
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Menu"].Item, {
+    onClick: editClick,
+    style: {
+      minWidth: '4em'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Icon"], {
+    name: "edit"
+  }), " Edit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Sidebar"].Pusher, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_swipeable__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    onSwipedLeft: onSwipedLeft,
+    onSwipedRight: onSwipedRight
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Segment"], {
     style: {
       minHeight: 85
     },
     onClick: itemClick,
     basic: true
-  }, localOnly === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Label"], {
+  }, localOnly === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Label"], {
     icon: "refresh",
     as: "a",
     color: "yellow",
     corner: true
-  }) : null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Header"], {
+  }) : null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Header"], {
     inverted: true,
     onClick: function onClick() {}
-  }, getHeader(JSON.parse(body))), getMeta(JSON.parse(body)), console.log(localOnly)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Confirm"], {
+  }, getHeader(JSON.parse(body))), getMeta(JSON.parse(body))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Confirm"], {
     header: "Delete Structure?",
     open: deleteConfirmVisible,
     onCancel: deleteCancel,
@@ -1123,7 +1155,12 @@ var StructureListItem = function StructureListItem(_ref) {
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_5__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_5__["withProps"])(function (_ref2) {
+var SIDEBARS = {
+  NONE: null,
+  DELETE: 1,
+  EDIT: -1
+};
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_6__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_4__["withReduxHome"], Object(recompose__WEBPACK_IMPORTED_MODULE_6__["withProps"])(function (_ref2) {
   var id = _ref2.structure.id;
   var localOnly = id.indexOf('pending') === 0;
   var color = null;
@@ -1133,26 +1170,68 @@ var StructureListItem = function StructureListItem(_ref) {
     color: color,
     localOnly: localOnly
   };
-}), _graphql_queries__WEBPACK_IMPORTED_MODULE_3__["withDeleteStructure"], Object(recompose__WEBPACK_IMPORTED_MODULE_5__["withStateHandlers"])({
-  sidebarVisible: false,
+}), _graphql_queries__WEBPACK_IMPORTED_MODULE_3__["withDeleteStructure"], Object(recompose__WEBPACK_IMPORTED_MODULE_6__["withStateHandlers"])({
+  sidebarVisible: SIDEBARS.NONE,
   deleteConfirmVisible: false
 }, {
-  itemClick: function itemClick(_ref3) {
+  itemClick: function itemClick(_ref3, _ref4) {
     var sidebarVisible = _ref3.sidebarVisible;
+    var id = _ref4.structure.id,
+        viewStructure = _ref4.viewStructure;
     return function (e) {
-      console.log('click', e, sidebarVisible);
-      if (sidebarVisible === true) return {
-        sidebarVisible: false
+      // console.log('click', e, sidebarVisible, id)
+      if (sidebarVisible !== SIDEBARS.NONE) return {
+        sidebarVisible: SIDEBARS.NONE
       };else {
-        console.log('NAVIGATE');
+        viewStructure(id);
       }
     };
   },
-  openMenu: function openMenu() {
+  editClick: function editClick(_ref5, _ref6) {
+    var sidebarVisible = _ref5.sidebarVisible;
+    var id = _ref6.structure.id,
+        editStructure = _ref6.editStructure;
+    return function (e) {
+      // console.log('click EDIT', e, sidebarVisible, id)
+      editStructure(id);
+    };
+  },
+  onSwipedLeft: function onSwipedLeft(_ref7) {
+    var sidebarVisible = _ref7.sidebarVisible;
     return function () {
-      return {
-        sidebarVisible: true
-      };
+      switch (sidebarVisible) {
+        case SIDEBARS.NONE:
+          return {
+            sidebarVisible: SIDEBARS.DELETE
+          };
+
+        case SIDEBARS.EDIT:
+          return {
+            sidebarVisible: SIDEBARS.NONE
+          };
+
+        default:
+          break;
+      }
+    };
+  },
+  onSwipedRight: function onSwipedRight(_ref8) {
+    var sidebarVisible = _ref8.sidebarVisible;
+    return function () {
+      switch (sidebarVisible) {
+        case SIDEBARS.NONE:
+          return {
+            sidebarVisible: SIDEBARS.EDIT
+          };
+
+        case SIDEBARS.DELETE:
+          return {
+            sidebarVisible: SIDEBARS.NONE
+          };
+
+        default:
+          break;
+      }
     };
   },
   closeMenu: function closeMenu() {
@@ -1160,7 +1239,7 @@ var StructureListItem = function StructureListItem(_ref) {
       e.stopPropagation(); // Make sure we don't accidentally trigger  click
 
       return {
-        sidebarVisible: false
+        sidebarVisible: SIDEBARS.NONE
       };
     };
   },
@@ -1174,20 +1253,21 @@ var StructureListItem = function StructureListItem(_ref) {
   deleteCancel: function deleteCancel() {
     return function () {
       return {
-        deleteConfirmVisible: false
+        deleteConfirmVisible: false,
+        sidebarVisible: SIDEBARS.NONE
       };
     };
   },
-  deleteConfirm: function deleteConfirm(state, _ref4) {
-    var deleteStructure = _ref4.deleteStructure,
-        structure = _ref4.structure;
+  deleteConfirm: function deleteConfirm(state, _ref9) {
+    var deleteStructure = _ref9.deleteStructure,
+        structure = _ref9.structure;
     return function () {
       deleteStructure({
         id: structure.id
       });
       return {
         deleteConfirmVisible: false,
-        sidebarVisible: false
+        sidebarVisible: SIDEBARS.NONE
       };
     };
   }
@@ -1333,11 +1413,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Note__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Note */ "./src/components/BDAMobile/questions/Note.jsx");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-/* harmony import */ var _misc_Placeholder__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../misc/Placeholder */ "./src/components/misc/Placeholder.jsx");
-/* harmony import */ var _CardListPicker_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CardListPicker.css */ "./src/components/BDAMobile/questions/CardListPicker.css");
-/* harmony import */ var _CardListPicker_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_CardListPicker_css__WEBPACK_IMPORTED_MODULE_7__);
-
+/* harmony import */ var _misc_Placeholder__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../misc/Placeholder */ "./src/components/misc/Placeholder.jsx");
+/* harmony import */ var _CardListPicker_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CardListPicker.css */ "./src/components/BDAMobile/questions/CardListPicker.css");
+/* harmony import */ var _CardListPicker_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_CardListPicker_css__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
@@ -1366,7 +1444,9 @@ var CardListPicker = function CardListPicker(_ref) {
       placeholder: placeholder
     }, op));
   });
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Segment"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Header"], {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Segment"], {
+    className: "BDAFormField"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Header"], {
     as: "h3"
   }, title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Modal"], {
     closeIcon: true,
@@ -1380,7 +1460,7 @@ var CardListPicker = function CardListPicker(_ref) {
     as: "div",
     maxWidth: 499
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Card"].Group, {
-    itemsPerRow: 2,
+    itemsPerRow: 3,
     centered: true
   }, items)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Responsive"], {
     as: "div",
@@ -1424,8 +1504,8 @@ var CardListListItem = function CardListListItem(_ref2) {
       text = _ref2.text,
       subText = _ref2.subText,
       placeholder = _ref2.placeholder;
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["List"].Item, null, placeholder ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_misc_Placeholder__WEBPACK_IMPORTED_MODULE_6__["default"], Object.assign({}, placeholder, {
-    height: 50
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["List"].Item, null, placeholder ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_misc_Placeholder__WEBPACK_IMPORTED_MODULE_5__["default"], Object.assign({}, placeholder, {
+    minHeight: 50
   })) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Image"], {
     src: image,
     width: "100"
@@ -1446,7 +1526,7 @@ var CardListPickerItem = function CardListPickerItem(_ref3) {
       return toggleValue(value);
     },
     className: selected ? 'active' : ''
-  }, placeholder ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_misc_Placeholder__WEBPACK_IMPORTED_MODULE_6__["default"], Object.assign({}, placeholder, {
+  }, placeholder ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_misc_Placeholder__WEBPACK_IMPORTED_MODULE_5__["default"], Object.assign({}, placeholder, {
     minHeight: 200
   })) : react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Image"], {
     src: image,
@@ -1472,7 +1552,7 @@ var Present = function Present(_ref4) {
   })))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withStateHandlers"])({
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withStateHandlers"])({
   modalOpen: false
 }, {
   toggleModal: function toggleModal(_ref5) {
@@ -1534,8 +1614,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var _Note__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Note */ "./src/components/BDAMobile/questions/Note.jsx");
 /* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-
 
 
 
@@ -1550,7 +1628,8 @@ var CheckboxQuestion = function CheckboxQuestion(_ref) {
       setNote = _ref.setNote,
       setValue = _ref.setValue;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Segment"], {
-    basic: true
+    basic: true,
+    className: "BDAFormField"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Header"], {
     as: "h3"
   }, title), options.map(function (_ref2, idx) {
@@ -1597,7 +1676,7 @@ function printValues(value, options) {
   }));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_3__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_4__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_3__["branch"])(function (_ref4) {
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_3__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_3__["branch"])(function (_ref4) {
   var present = _ref4.present;
   return !!present;
 }, Object(recompose__WEBPACK_IMPORTED_MODULE_3__["renderComponent"])(Present)), // Wrap setvalue because it can be multiples
@@ -1637,8 +1716,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var semantic_ui_calendar_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! semantic-ui-calendar-react */ "./node_modules/semantic-ui-calendar-react/dist/index.js");
 /* harmony import */ var semantic_ui_calendar_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_calendar_react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-
 
 
 
@@ -1657,7 +1734,8 @@ var withFormWrapper = function withFormWrapper(WrappedComponent) {
         props = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["selectorType", "present", "formGuid", "title", "value", "setNote", "setValue"]);
 
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Segment"], {
-      basic: true
+      basic: true,
+      className: "BDAFormField"
     }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Header"], {
       as: "h3"
     }, title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Form"].Field, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(WrappedComponent, Object.assign({}, props, {
@@ -1692,19 +1770,19 @@ var Present = function Present(_ref3) {
   }, "Not Entered"))));
 };
 
-var DatePicker = Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref4) {
+var DatePicker = Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref4) {
   var present = _ref4.present;
   return !!present;
 }, Object(recompose__WEBPACK_IMPORTED_MODULE_2__["renderComponent"])(Present)), withFormWrapper)(semantic_ui_calendar_react__WEBPACK_IMPORTED_MODULE_3__["DateInput"]);
-var DateTimePicker = Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref5) {
+var DateTimePicker = Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref5) {
   var present = _ref5.present;
   return !!present;
 }, Object(recompose__WEBPACK_IMPORTED_MODULE_2__["renderComponent"])(Present)), withFormWrapper)(semantic_ui_calendar_react__WEBPACK_IMPORTED_MODULE_3__["DateTimeInput"]);
-var TimePicker = Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref6) {
+var TimePicker = Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref6) {
   var present = _ref6.present;
   return !!present;
 }, Object(recompose__WEBPACK_IMPORTED_MODULE_2__["renderComponent"])(Present)), withFormWrapper)(semantic_ui_calendar_react__WEBPACK_IMPORTED_MODULE_3__["TimeInput"]);
-var DateRangePicker = Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref7) {
+var DateRangePicker = Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref7) {
   var present = _ref7.present;
   return !!present;
 }, Object(recompose__WEBPACK_IMPORTED_MODULE_2__["renderComponent"])(Present)), withFormWrapper)(semantic_ui_calendar_react__WEBPACK_IMPORTED_MODULE_3__["DatesRangeInput"]);
@@ -1727,14 +1805,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var _Note__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Note */ "./src/components/BDAMobile/questions/Note.jsx");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
 
 
 
 
 // import _ from 'lodash'
-
 
 
 
@@ -1752,7 +1828,8 @@ var DropDownQuestion = function DropDownQuestion(_ref) {
       dropdownProps = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(_ref, ["title", "formGuid", "hasNote", "dispatch", "note", "notePrompt", "present", "setValue", "setNote"]);
 
   return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Segment"], {
-    basic: true
+    basic: true,
+    className: "BDAFormField"
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Header"], {
     as: "h3"
   }, title), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Dropdown"], Object.assign({}, dropdownProps, {
@@ -1806,11 +1883,11 @@ function printValues(value, options) {
   }
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_7__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_6__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_7__["branch"])(function (_ref4) {
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_6__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_6__["branch"])(function (_ref4) {
   var present = _ref4.present;
   return !!present;
-}, Object(recompose__WEBPACK_IMPORTED_MODULE_7__["renderComponent"])(Present)), // Wrap setvalue because it can be multiples
-Object(recompose__WEBPACK_IMPORTED_MODULE_7__["mapProps"])(function (_ref5) {
+}, Object(recompose__WEBPACK_IMPORTED_MODULE_6__["renderComponent"])(Present)), // Wrap setvalue because it can be multiples
+Object(recompose__WEBPACK_IMPORTED_MODULE_6__["mapProps"])(function (_ref5) {
   var options = _ref5.options,
       multiple = _ref5.multiple,
       value = _ref5.value,
@@ -1918,8 +1995,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
 /* harmony import */ var _FloodBehavior_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./FloodBehavior.css */ "./src/components/BDAMobile/questions/FloodBehavior.css");
 /* harmony import */ var _FloodBehavior_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_FloodBehavior_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-
 
 
 
@@ -1936,7 +2011,7 @@ var FloodBehavior = function FloodBehavior(_ref) {
       setBehavior = _ref.setBehavior;
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"], {
     basic: true,
-    className: "floodBehavior"
+    className: "floodBehavior  BDAFormField"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Header"], {
     as: "h3"
   }, label), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"].Group, {
@@ -2005,7 +2080,7 @@ var Present = function Present(_ref3) {
   }, "Location Not Entered"))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_3__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withReduxField"], // Wrap setvalue because it can be multiples
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_3__["compose"])( // Wrap setvalue because it can be multiples
 Object(recompose__WEBPACK_IMPORTED_MODULE_3__["withHandlers"])({
   setLoc: function setLoc(_ref4) {
     var value = _ref4.value,
@@ -2079,7 +2154,9 @@ var ImageListPicker = function ImageListPicker(_ref) {
       notePrompt = _ref.notePrompt,
       setValue = _ref.setValue,
       setNote = _ref.setNote;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Header"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"], {
+    className: "BDAFormField"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Header"], {
     as: "h3"
   }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["List"], {
     selection: true
@@ -2155,7 +2232,7 @@ function printValues(value, options) {
   }
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withReduxField"], // Wrap setvalue because it can be multiples
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withFormState"], // Wrap setvalue because it can be multiples
 Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withHandlers"])({
   setValue: function setValue(_ref4) {
     var value = _ref4.value,
@@ -2200,13 +2277,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_map_gl__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-map-gl */ "./node_modules/react-map-gl/dist/esm/index.js");
 /* harmony import */ var react_virtualized__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-virtualized */ "./node_modules/react-virtualized/dist/es/index.js");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _LocationPicker_style_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./LocationPicker.style.json */ "./src/components/BDAMobile/questions/LocationPicker.style.json");
-var _LocationPicker_style_json__WEBPACK_IMPORTED_MODULE_14___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./LocationPicker.style.json */ "./src/components/BDAMobile/questions/LocationPicker.style.json", 1);
-/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! mapbox-gl/dist/mapbox-gl.css */ "./node_modules/mapbox-gl/dist/mapbox-gl.css");
-/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_15__);
-
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+/* harmony import */ var _LocationPicker_style_json__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./LocationPicker.style.json */ "./src/components/BDAMobile/questions/LocationPicker.style.json");
+var _LocationPicker_style_json__WEBPACK_IMPORTED_MODULE_13___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./LocationPicker.style.json */ "./src/components/BDAMobile/questions/LocationPicker.style.json", 1);
+/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! mapbox-gl/dist/mapbox-gl.css */ "./node_modules/mapbox-gl/dist/mapbox-gl.css");
+/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_14__);
 
 
 
@@ -2239,7 +2314,9 @@ var LocationPicker = function LocationPicker(_ref) {
     name: error ? 'check times' : 'check circle'
   }); // console.log('RENDER', viewport)
 
-  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Segment"], null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Header"], {
+  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Segment"], {
+    className: "BDAFormField"
+  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Header"], {
     as: "h3"
   }, title), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
     columns: 2
@@ -2265,14 +2342,10 @@ var LocationPicker = function LocationPicker(_ref) {
     return loading ? null : react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
       height: height,
       width: width,
-      mapStyle: _LocationPicker_style_json__WEBPACK_IMPORTED_MODULE_14__
+      mapStyle: _LocationPicker_style_json__WEBPACK_IMPORTED_MODULE_13__
     }, viewport, {
       onViewportChange: onViewportChange,
       mapboxApiAccessToken: mapboxApiAccessToken
-    }), console.log('HERE', {
-      loading: loading,
-      height: height,
-      width: width
     }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_9__["Marker"], {
       key: "marker-1",
       longitude: viewport.longitude,
@@ -2292,6 +2365,12 @@ var LocationPicker = function LocationPicker(_ref) {
     negative: error,
     icon: true
   }, icon, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Message"].Content, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", null, error || message))));
+};
+
+LocationPicker.defaultProps = {
+  onViewportChange: function onViewportChange() {
+    return console.log('onViewportChange NOT SET');
+  }
 };
 
 var withGeolocation = function withGeolocation(WrappedComponent) {
@@ -2369,7 +2448,6 @@ var withGeolocation = function withGeolocation(WrappedComponent) {
 
                   case 3:
                     location = _context.sent;
-                    // console.log('SETSTATE', { ...location })
                     if (location.viewport) this.props.onViewportChange(location.viewport);
                     this.setState(location.state);
 
@@ -2404,18 +2482,18 @@ var Present = function Present(_ref4) {
       value = _ref4.value;
   return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"], null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"].Content, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"].Header, {
     as: "h4"
-  }, title), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"].Description, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("pre", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("code", null, JSON.stringify(value, null, 2))))));
+  }, title || 'Geolocation'), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"].Description, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("pre", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("code", null, JSON.stringify(value, null, 2))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_13__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_12__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_13__["withHandlers"])({
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_12__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_12__["withHandlers"])({
   onViewportChange: function onViewportChange(_ref5) {
     var value = _ref5.value,
         setValue = _ref5.setValue;
     return function (newVal) {
-      return setValue(newVal);
+      setValue(newVal);
     };
   }
-}), Object(recompose__WEBPACK_IMPORTED_MODULE_13__["mapProps"])(function (props) {
+}), Object(recompose__WEBPACK_IMPORTED_MODULE_12__["mapProps"])(function (props) {
   return Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     viewport: props.value || {
       latitude: 49.29949,
@@ -2423,10 +2501,10 @@ var Present = function Present(_ref4) {
       zoom: 17
     }
   });
-}), Object(recompose__WEBPACK_IMPORTED_MODULE_13__["branch"])(function (_ref6) {
+}), Object(recompose__WEBPACK_IMPORTED_MODULE_12__["branch"])(function (_ref6) {
   var present = _ref6.present;
   return !!present;
-}, Object(recompose__WEBPACK_IMPORTED_MODULE_13__["renderComponent"])(Present)), withGeolocation)(LocationPicker));
+}, Object(recompose__WEBPACK_IMPORTED_MODULE_12__["renderComponent"])(Present)), withGeolocation)(LocationPicker));
 
 /***/ }),
 
@@ -2740,13 +2818,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var react_compound_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-compound-slider */ "./node_modules/react-compound-slider/es/index.js");
 /* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../redux/withRedux */ "./src/redux/withRedux.js");
-/* harmony import */ var _Track__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Track */ "./src/components/BDAMobile/questions/PercentSliders/Track.jsx");
-/* harmony import */ var _Tick__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Tick */ "./src/components/BDAMobile/questions/PercentSliders/Tick.jsx");
-/* harmony import */ var _Handle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Handle */ "./src/components/BDAMobile/questions/PercentSliders/Handle.jsx");
-/* harmony import */ var _PercentSlider_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./PercentSlider.css */ "./src/components/BDAMobile/questions/PercentSliders/PercentSlider.css");
-/* harmony import */ var _PercentSlider_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_PercentSlider_css__WEBPACK_IMPORTED_MODULE_9__);
-
+/* harmony import */ var _Track__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Track */ "./src/components/BDAMobile/questions/PercentSliders/Track.jsx");
+/* harmony import */ var _Tick__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Tick */ "./src/components/BDAMobile/questions/PercentSliders/Tick.jsx");
+/* harmony import */ var _Handle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Handle */ "./src/components/BDAMobile/questions/PercentSliders/Handle.jsx");
+/* harmony import */ var _PercentSlider_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./PercentSlider.css */ "./src/components/BDAMobile/questions/PercentSliders/PercentSlider.css");
+/* harmony import */ var _PercentSlider_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_PercentSlider_css__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
@@ -2765,7 +2841,9 @@ var PercentSliders = function PercentSliders(_ref) {
       _onUpdate = _ref.onUpdate,
       onChange = _ref.onChange,
       sliderValues = _ref.sliderValues;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Header"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "BDAFormField"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Header"], {
     as: "h3"
   }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"], {
     basic: true
@@ -2825,7 +2903,7 @@ var CustomSlider = function CustomSlider(_ref3) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "slider-handles"
     }, handles.map(function (handle, idx) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Handle__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Handle__WEBPACK_IMPORTED_MODULE_7__["default"], {
         disabled: idx !== 0,
         key: handle.id,
         handle: handle,
@@ -2842,7 +2920,7 @@ var CustomSlider = function CustomSlider(_ref3) {
       var id = _ref7.id,
           source = _ref7.source,
           target = _ref7.target;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Track__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Track__WEBPACK_IMPORTED_MODULE_5__["default"], {
         key: id,
         trackNum: idx,
         step: step,
@@ -2858,7 +2936,7 @@ var CustomSlider = function CustomSlider(_ref3) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "slider-ticks"
     }, ticks.map(function (tick) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Tick__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Tick__WEBPACK_IMPORTED_MODULE_6__["default"], {
         key: tick.id,
         tick: tick,
         count: ticks.length
@@ -2927,7 +3005,7 @@ var Present = function Present(_ref12) {
   }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Item"].Description, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("code", null, JSON.stringify(value, null, 2))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_4__["branch"])(function (_ref13) {
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_4__["branch"])(function (_ref13) {
   var present = _ref13.present;
   return !!present;
 }, Object(recompose__WEBPACK_IMPORTED_MODULE_4__["renderComponent"])(Present)), Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withStateHandlers"])(function (_ref14) {
@@ -3036,6 +3114,52 @@ var Track = function Track(_ref) {
 
 /***/ }),
 
+/***/ "./src/components/BDAMobile/questions/Photos.jsx":
+/*!*******************************************************!*\
+  !*** ./src/components/BDAMobile/questions/Photos.jsx ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var _Note__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Note */ "./src/components/BDAMobile/questions/Note.jsx");
+
+
+
+
+var Photos = function Photos(_ref) {
+  var label = _ref.label,
+      notePrompt = _ref.notePrompt,
+      note = _ref.note,
+      value = _ref.value,
+      hasNote = _ref.hasNote,
+      setNote = _ref.setNote;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Segment"], {
+    className: "BDAFormField"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Header"], {
+    as: "h3"
+  }, label), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+    type: "file",
+    accept: "image/*",
+    fluid: true,
+    multiple: true,
+    color: "red"
+  }), !hasNote ? null : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Note__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    label: notePrompt,
+    value: note,
+    setValue: setNote,
+    modalTitle: "".concat(label, ": ").concat(notePrompt)
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Photos);
+
+/***/ }),
+
 /***/ "./src/components/BDAMobile/questions/RadioQuestion.jsx":
 /*!**************************************************************!*\
   !*** ./src/components/BDAMobile/questions/RadioQuestion.jsx ***!
@@ -3051,8 +3175,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var _Note__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Note */ "./src/components/BDAMobile/questions/Note.jsx");
 /* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-
 
 
 
@@ -3068,7 +3190,8 @@ var RadioQuestion = function RadioQuestion(_ref) {
       setValue = _ref.setValue,
       setNote = _ref.setNote;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Segment"], {
-    basic: true
+    basic: true,
+    className: "BDAFormField"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Header"], {
     as: "h3"
   }, title), options.map(function (_ref2, idx) {
@@ -3092,6 +3215,14 @@ var RadioQuestion = function RadioQuestion(_ref) {
     modalTitle: "".concat(title, ": ").concat(notePrompt)
   }));
 };
+RadioQuestion.defaultProps = {
+  setValue: function setValue() {
+    return console.log('setValue NOT SET');
+  },
+  setNote: function setNote() {
+    return console.log('setNote NOT SET');
+  }
+};
 
 var Present = function Present(_ref3) {
   var title = _ref3.title,
@@ -3109,7 +3240,7 @@ var Present = function Present(_ref3) {
   }, "Not Entered")), note ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Item"].Extra, null, "Note: ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, note)) : null));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_3__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_4__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_3__["branch"])(function (_ref4) {
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_3__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_3__["branch"])(function (_ref4) {
   var present = _ref4.present;
   return !!present;
 }, Object(recompose__WEBPACK_IMPORTED_MODULE_3__["renderComponent"])(Present)))(RadioQuestion));
@@ -3130,8 +3261,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-
 
 
 
@@ -3142,7 +3271,8 @@ var TextField = function TextField(_ref) {
       value = _ref.value,
       setValue = _ref.setValue;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Segment"], {
-    basic: true
+    basic: true,
+    className: "BDAFormField"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Header"], {
     as: "h3"
   }, label), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Form"].Field, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Input"], {
@@ -3154,6 +3284,11 @@ var TextField = function TextField(_ref) {
       return setValue(newval);
     }
   })));
+};
+TextField.defaultProps = {
+  setValue: function setValue() {
+    return console.log('setValue NOT SET');
+  }
 };
 
 var Present = function Present(_ref3) {
@@ -3168,7 +3303,7 @@ var Present = function Present(_ref3) {
   }, "Not Entered"))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_3__["withReduxField"], Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref4) {
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref4) {
   var present = _ref4.present;
   return !!present;
 }, Object(recompose__WEBPACK_IMPORTED_MODULE_2__["renderComponent"])(Present)))(TextField));
@@ -3194,13 +3329,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _FloodBehavior__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./FloodBehavior */ "./src/components/BDAMobile/questions/FloodBehavior.jsx");
 /* harmony import */ var _ImageListPicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ImageListPicker */ "./src/components/BDAMobile/questions/ImageListPicker.jsx");
 /* harmony import */ var _CardListPicker__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./CardListPicker */ "./src/components/BDAMobile/questions/CardListPicker.jsx");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _LocationPicker__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./LocationPicker */ "./src/components/BDAMobile/questions/LocationPicker.jsx");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../config */ "./src/config.js");
-/* harmony import */ var _Note__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Note */ "./src/components/BDAMobile/questions/Note.jsx");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-/* harmony import */ var _DatePicker__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./DatePicker */ "./src/components/BDAMobile/questions/DatePicker.jsx");
+/* harmony import */ var _Photos__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Photos */ "./src/components/BDAMobile/questions/Photos.jsx");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _LocationPicker__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./LocationPicker */ "./src/components/BDAMobile/questions/LocationPicker.jsx");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../config */ "./src/config.js");
+/* harmony import */ var _Note__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Note */ "./src/components/BDAMobile/questions/Note.jsx");
+/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
+/* harmony import */ var _DatePicker__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./DatePicker */ "./src/components/BDAMobile/questions/DatePicker.jsx");
+
 
 
 
@@ -3219,7 +3356,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function fillMurray(size) {
-  var rand = size + lodash__WEBPACK_IMPORTED_MODULE_10___default.a.random(-10, 10);
+  var rand = size + lodash__WEBPACK_IMPORTED_MODULE_11___default.a.random(-10, 10);
 
   return "https://www.fillmurray.com/".concat(rand, "/").concat(rand);
 } // Just set us up with a dummy redux state so we can test things
@@ -3299,6 +3436,16 @@ var devInitFixtures = [{
     }]
   }
 }, {
+  name: 'Photos',
+  component: _Photos__WEBPACK_IMPORTED_MODULE_10__["default"],
+  props: {
+    label: 'My Photos:',
+    name: 'TESTNAME',
+    hasNote: true,
+    notePrompt: 'Tell us how you feel about that...',
+    section: 23
+  }
+}, {
   name: 'Dropdown Question',
   component: _DropDownQuestion__WEBPACK_IMPORTED_MODULE_4__["default"],
   props: {
@@ -3338,7 +3485,7 @@ var devInitFixtures = [{
   }
 }, {
   name: 'Date Picker',
-  component: _DatePicker__WEBPACK_IMPORTED_MODULE_15__["DatePicker"],
+  component: _DatePicker__WEBPACK_IMPORTED_MODULE_16__["DatePicker"],
   props: {
     title: 'My Title date',
     name: 'TESTNAME',
@@ -3346,7 +3493,7 @@ var devInitFixtures = [{
   }
 }, {
   name: 'Time Picker',
-  component: _DatePicker__WEBPACK_IMPORTED_MODULE_15__["TimePicker"],
+  component: _DatePicker__WEBPACK_IMPORTED_MODULE_16__["TimePicker"],
   props: {
     title: 'My Title',
     name: 'TESTNAME',
@@ -3354,7 +3501,7 @@ var devInitFixtures = [{
   }
 }, {
   name: 'DateTimePicker',
-  component: _DatePicker__WEBPACK_IMPORTED_MODULE_15__["DateTimePicker"],
+  component: _DatePicker__WEBPACK_IMPORTED_MODULE_16__["DateTimePicker"],
   wrapForm: true,
   reduxState: reduxHelper(),
   props: {
@@ -3364,7 +3511,7 @@ var devInitFixtures = [{
   }
 }, {
   name: 'DateRangePicker',
-  component: _DatePicker__WEBPACK_IMPORTED_MODULE_15__["DateRangePicker"],
+  component: _DatePicker__WEBPACK_IMPORTED_MODULE_16__["DateRangePicker"],
   props: {
     title: 'My Title',
     name: 'TESTNAME',
@@ -3372,7 +3519,7 @@ var devInitFixtures = [{
   }
 }, {
   name: 'Notes',
-  component: Object(_redux_withRedux__WEBPACK_IMPORTED_MODULE_14__["withReduxField"])(_Note__WEBPACK_IMPORTED_MODULE_13__["default"]),
+  component: Object(_redux_withRedux__WEBPACK_IMPORTED_MODULE_15__["withFormState"])(_Note__WEBPACK_IMPORTED_MODULE_14__["default"]),
   props: {
     label: 'Add note...',
     name: 'TESTNAME',
@@ -3446,11 +3593,11 @@ var devInitFixtures = [{
   }
 }, {
   name: 'Location Picker',
-  component: _LocationPicker__WEBPACK_IMPORTED_MODULE_11__["default"],
+  component: _LocationPicker__WEBPACK_IMPORTED_MODULE_12__["default"],
   props: {
     title: 'My Question:',
     name: 'TESTNAME',
-    mapboxApiAccessToken: _config__WEBPACK_IMPORTED_MODULE_12__["mapBoxToken"]
+    mapboxApiAccessToken: _config__WEBPACK_IMPORTED_MODULE_13__["mapBoxToken"]
   }
 }];
 var devFixtures = devInitFixtures.reduce(function (acc, fix) {
@@ -3474,7 +3621,7 @@ var devFixtures = devInitFixtures.reduce(function (acc, fix) {
   return acc;
 }, []);
 
-var finalFixes = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_config__WEBPACK_IMPORTED_MODULE_12__["default"].env === 'development' ? devFixtures : []).map(function (fix) {
+var finalFixes = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_config__WEBPACK_IMPORTED_MODULE_13__["default"].env === 'development' ? devFixtures : []).map(function (fix) {
   fix.component.displayName = "BDA Mobile App/Questions/".concat(fix.name);
   return fix;
 });
@@ -3483,54 +3630,56 @@ var finalFixes = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel
 
 /***/ }),
 
-/***/ "./src/components/BDAMobile/sections/DesignInfo.jsx":
-/*!**********************************************************!*\
-  !*** ./src/components/BDAMobile/sections/DesignInfo.jsx ***!
-  \**********************************************************/
+/***/ "./src/components/BDAMobile/sections/designInfo.js":
+/*!*********************************************************!*\
+  !*** ./src/components/BDAMobile/sections/designInfo.js ***!
+  \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../questions/RadioQuestion */ "./src/components/BDAMobile/questions/RadioQuestion.jsx");
-/* harmony import */ var _questions_TextField__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../questions/TextField */ "./src/components/BDAMobile/questions/TextField.jsx");
-/* harmony import */ var _questions_DropDownQuestion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../questions/DropDownQuestion */ "./src/components/BDAMobile/questions/DropDownQuestion.jsx");
-/* harmony import */ var _questions_DatePicker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../questions/DatePicker */ "./src/components/BDAMobile/questions/DatePicker.jsx");
+/* harmony import */ var _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../questions/RadioQuestion */ "./src/components/BDAMobile/questions/RadioQuestion.jsx");
+/* harmony import */ var _questions_TextField__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../questions/TextField */ "./src/components/BDAMobile/questions/TextField.jsx");
+/* harmony import */ var _questions_DropDownQuestion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../questions/DropDownQuestion */ "./src/components/BDAMobile/questions/DropDownQuestion.jsx");
+/* harmony import */ var _questions_DatePicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../questions/DatePicker */ "./src/components/BDAMobile/questions/DatePicker.jsx");
+/* harmony import */ var _questions_Photos__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../questions/Photos */ "./src/components/BDAMobile/questions/Photos.jsx");
 
 
 
- // import { Segment } from 'semantic-ui-react'
 
+ // Design Info
 
-
-var DesignInfo = function DesignInfo(_ref) {
-  var id = _ref.id,
-      present = _ref.present;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_TextField__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "designerName",
-    present: present,
-    label: "Designer Name(s):",
-    placeholder: "Susan Andersen"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_TextField__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "structureID",
-    present: present,
-    label: "Structure ID:",
-    placeholder: "COMPLEX_323123 ... 1233"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_DatePicker__WEBPACK_IMPORTED_MODULE_4__["DateTimePicker"], {
-    name: "observationDate",
-    present: present,
-    title: "Observation Date:"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_TextField__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "designVideo",
-    present: present,
-    label: "Design Video:",
-    type: "url",
-    placeholder: "https://youtu.be/SB-qEYVdvXA"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_DropDownQuestion__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "designFlowCondition",
-    present: present,
+/* harmony default export */ __webpack_exports__["default"] = ({
+  title: 'Design Info',
+  description: 'Tell us something about your design',
+  fields: [{
+    component: _questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"],
+    name: 'designerName',
+    label: 'Designer Name(s):',
+    placeholder: 'Susan Andersen'
+  }, {
+    component: _questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"],
+    name: 'structureID',
+    label: 'Structure ID:',
+    placeholder: 'COMPLEX_323123 ... 1233'
+  }, {
+    component: _questions_Photos__WEBPACK_IMPORTED_MODULE_4__["default"],
+    name: 'addPhotos',
+    label: 'Add Photos:'
+  }, {
+    component: _questions_DatePicker__WEBPACK_IMPORTED_MODULE_3__["DateTimePicker"],
+    name: 'observationDate',
+    title: 'Observation Date:'
+  }, {
+    component: _questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"],
+    name: 'designVideo',
+    label: 'Design Video:',
+    type: 'url',
+    placeholder: 'https://youtu.be/SB-qEYVdvXA'
+  }, {
+    component: _questions_DropDownQuestion__WEBPACK_IMPORTED_MODULE_2__["default"],
+    name: 'designFlowCondition',
     title: 'Design Flow Conditions',
     fluid: true,
     selection: true,
@@ -3547,9 +3696,9 @@ var DesignInfo = function DesignInfo(_ref) {
       text: 'Post Flood',
       value: 'POST_FLOOW'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    name: "designType",
-    present: present,
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    name: 'designType',
     title: 'Design Type',
     options: [{
       label: 'Beaver Dam Analogue',
@@ -3561,136 +3710,129 @@ var DesignInfo = function DesignInfo(_ref) {
       label: 'Unanchored/Pinned Wood Addition',
       value: 'UNANCHORED_WOOD'
     }]
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (DesignInfo);
+  }]
+});
 
 /***/ }),
 
-/***/ "./src/components/BDAMobile/sections/ExistingFeatures.jsx":
-/*!****************************************************************!*\
-  !*** ./src/components/BDAMobile/sections/ExistingFeatures.jsx ***!
-  \****************************************************************/
+/***/ "./src/components/BDAMobile/sections/existingFeatures.js":
+/*!***************************************************************!*\
+  !*** ./src/components/BDAMobile/sections/existingFeatures.js ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _questions_CardListPicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../questions/CardListPicker */ "./src/components/BDAMobile/questions/CardListPicker.jsx");
+/* harmony import */ var _questions_CardListPicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../questions/CardListPicker */ "./src/components/BDAMobile/questions/CardListPicker.jsx");
 
-
-
-var ExistingFeatures = function ExistingFeatures(_ref) {
-  var id = _ref.id,
-      present = _ref.present;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_CardListPicker__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "Expected Geomorphic Units at Structure Location",
-    name: "expectedUnits",
-    present: present,
+/* harmony default export */ __webpack_exports__["default"] = ({
+  title: 'Existing Features',
+  description: 'are there any existing features?',
+  fields: [// ExistingFeatures
+  {
+    component: _questions_CardListPicker__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Expected Geomorphic Units at Structure Location',
+    name: 'expectedUnits',
     hasNote: true,
     allowMultiple: true,
     options: [{
-      image: '/images/gut/planar_plane.png',
+      image: './images/gut/planar_plane.png',
       value: 'Planar',
       text: 'Planar'
     }, {
-      image: '/images/gut/convexity_mound.png',
+      image: './images/gut/convexity_mound.png',
       value: 'Convexity',
       text: 'Convexity (bar)'
     }, {
-      image: '/images/gut/convexity_saddle.png',
+      image: './images/gut/convexity_saddle.png',
       value: 'Saddle',
       text: 'Saddle (riffle)'
     }, {
-      image: '/images/gut/concavity_bowl.png',
+      image: './images/gut/concavity_bowl.png',
       value: 'Concavity',
       text: 'Concavity (true pool)'
     }, {
-      image: '/images/gut/concavity_trough.png',
+      image: './images/gut/concavity_trough.png',
       value: 'Trough',
       text: 'Trough (shallow thalweg or chute)'
     }, {
-      image: '/images/gut/planar_wall.png',
+      image: './images/gut/planar_wall.png',
       value: 'WallEdge',
       text: 'Wall: Bank'
     }, {
-      image: '/images/gut/planar_wall.png',
+      image: './images/gut/planar_wall.png',
       value: 'WallBank',
       text: 'Wall: Edge'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_CardListPicker__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "Structural Elements at Structure Location",
-    name: "elementsAtLocation",
-    present: present,
+  }, {
+    component: _questions_CardListPicker__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Structural Elements at Structure Location',
+    name: 'elementsAtLocation',
     hasNote: true,
     allowMultiple: true,
-    placeholder: {
-      icon: 'image outline',
-      aspect: 1
-    },
     options: [{
+      image: 'https://placekitten.com/200/200',
       value: "Roots",
       text: "Roots",
       subText: "some explanation"
     }, {
+      image: 'https://placekitten.com/200/201',
       value: "Live Trees/Shrubs",
       text: "Live Trees/Shrubs",
       subText: "some explanation"
     }, {
+      image: 'https://placekitten.com/201/200',
       value: "Aquatic Vegetation",
       text: "Aquatic Vegetation",
       subText: "some explanation"
     }, {
+      image: 'https://placekitten.com/200/202',
       value: "Boulder(s)",
       text: "Boulder(s)",
       subText: "some explanation"
     }, {
+      image: 'https://placekitten.com/202/200',
       value: "Woody Debris",
       text: "Woody Debris",
       subText: "some explanation"
     }, {
+      image: 'https://placekitten.com/200/203',
       value: "Wall: Bank",
       text: "Wall: Bank",
       subText: "some explanation"
     }, {
+      image: 'https://placekitten.com/203/200',
       value: "Wall: Bar Edge",
       text: "Wall: Bar Edge",
       subText: "some explanation"
     }]
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ExistingFeatures);
+  }]
+});
 
 /***/ }),
 
-/***/ "./src/components/BDAMobile/sections/GeomorphicResponses.jsx":
-/*!*******************************************************************!*\
-  !*** ./src/components/BDAMobile/sections/GeomorphicResponses.jsx ***!
-  \*******************************************************************/
+/***/ "./src/components/BDAMobile/sections/geomorphicResponse.js":
+/*!*****************************************************************!*\
+  !*** ./src/components/BDAMobile/sections/geomorphicResponse.js ***!
+  \*****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../questions/RadioQuestion */ "./src/components/BDAMobile/questions/RadioQuestion.jsx");
 /* harmony import */ var _questions_CardListPicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../questions/CardListPicker */ "./src/components/BDAMobile/questions/CardListPicker.jsx");
-/* harmony import */ var _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../questions/RadioQuestion */ "./src/components/BDAMobile/questions/RadioQuestion.jsx");
 
 
-
-
-var GeomorphicResponses = function GeomorphicResponses(_ref) {
-  var id = _ref.id,
-      present = _ref.present;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Pond Capacity (First Year Floods)",
-    name: "pondCapacityFirstYear",
-    present: present,
+/* harmony default export */ __webpack_exports__["default"] = ({
+  title: 'Anticipated Geomorphic Responses',
+  description: 'What geomorphic response do you anticipate?',
+  fields: [// Geomorphic Responses
+  {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Pond Capacity (First Year Floods)',
+    name: 'pondCapacityFirstYear',
     options: [{
       label: 'Clean',
       value: 'CLEAN'
@@ -3707,10 +3849,10 @@ var GeomorphicResponses = function GeomorphicResponses(_ref) {
       label: 'Full Sediment',
       value: 'FULL'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Pond Capacity (If Big Floods)",
-    name: "pondCapacityBigFlood",
-    present: present,
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Pond Capacity (If Big Floods)',
+    name: 'pondCapacityBigFlood',
     options: [{
       label: 'Clean',
       value: 'CLEAN'
@@ -3727,94 +3869,94 @@ var GeomorphicResponses = function GeomorphicResponses(_ref) {
       label: 'Full Sediment',
       value: 'FULL'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_CardListPicker__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "Expected Dominant Substrate Upstream of Structure",
-    name: "upstreamSubstrate",
-    present: present,
+  }, {
+    component: _questions_CardListPicker__WEBPACK_IMPORTED_MODULE_1__["default"],
+    title: 'Expected Dominant Substrate Upstream of Structure',
+    name: 'upstreamSubstrate',
     options: [{
-      image: '/images/substrate/fines.png',
+      image: './images/substrate/fines.png',
       value: 'Fines',
       text: 'Fines'
     }, {
-      image: '/images/substrate/sand.png',
+      image: './images/substrate/sand.png',
       value: 'Sands',
       text: 'Sands'
     }, {
-      image: '/images/substrate/gravel.png',
+      image: './images/substrate/gravel.png',
       value: 'Gravels',
       text: 'Gravels'
     }, {
-      image: '/images/substrate/cobble.png',
+      image: './images/substrate/cobble.png',
       value: 'Cobble',
       text: 'Cobble'
     }, {
-      image: '/images/substrate/food_cache.png',
+      image: './images/substrate/food_cache.png',
       value: 'Food Cache & Fines',
       text: 'Food Cache & Fines'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_CardListPicker__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "Expected Dominant Substrate Downstream of Structure",
-    name: "downstreamSubstrate",
-    present: present,
+  }, {
+    component: _questions_CardListPicker__WEBPACK_IMPORTED_MODULE_1__["default"],
+    title: 'Expected Dominant Substrate Downstream of Structure',
+    name: 'downstreamSubstrate',
     options: [{
-      image: '/images/substrate/fines.png',
+      image: './images/substrate/fines.png',
       value: 'Fines',
       text: 'Fines'
     }, {
-      image: '/images/substrate/sand.png',
+      image: './images/substrate/sand.png',
       value: 'Sands',
       text: 'Sands'
     }, {
-      image: '/images/substrate/gravel.png',
+      image: './images/substrate/gravel.png',
       value: 'Gravels',
       text: 'Gravels'
     }, {
-      image: '/images/substrate/cobble.png',
+      image: './images/substrate/cobble.png',
       value: 'Cobble',
       text: 'Cobble'
     }, {
-      image: '/images/substrate/food_cache.png',
+      image: './images/substrate/food_cache.png',
       value: 'Food Cache & Fines',
       text: 'Food Cache & Fines'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_CardListPicker__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "Expected Geomorphic Units at Structure Location",
-    name: "expectedUnitsAtStruct",
-    present: present,
+  }, {
+    component: _questions_CardListPicker__WEBPACK_IMPORTED_MODULE_1__["default"],
+    title: 'Expected Geomorphic Units at Structure Location',
+    name: 'expectedUnitsAtStruct',
     hasNotes: true,
     options: [{
-      image: '/images/gut/planar_plane.png',
+      image: './images/gut/planar_plane.png',
       value: 'Planar',
       text: 'Planar'
     }, {
-      image: '/images/gut/convexity_mound.png',
+      image: './images/gut/convexity_mound.png',
       value: 'Convexity',
       text: 'Convexity (bar)'
     }, {
-      image: '/images/gut/convexity_saddle.png',
+      image: './images/gut/convexity_saddle.png',
       value: 'Saddle',
       text: 'Saddle (riffle)'
     }, {
-      image: '/images/gut/concavity_bowl.png',
+      image: './images/gut/concavity_bowl.png',
       value: 'Concavity',
       text: 'Concavity (true pool)'
     }, {
-      image: '/images/gut/concavity_trough.png',
+      image: './images/gut/concavity_trough.png',
       value: 'Trough',
       text: 'Trough (shallow thalweg or chute)'
     }, {
-      image: '/images/gut/planar_wall.png',
+      image: './images/gut/planar_wall.png',
       value: 'WallEdge',
       text: 'Wall: Bank'
     }, {
-      image: '/images/gut/planar_wall.png',
+      image: './images/gut/planar_wall.png',
       value: 'WallBank',
       text: 'Wall: Edge'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Expected Structural Elements at Structure Location",
-    name: "expectedElementsAtStruct",
-    present: present,
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Expected Structural Elements at Structure Location',
+    name: 'expectedElementsAtStruct',
     hasNotes: true,
     options: [{
       label: 'Roots',
@@ -3838,46 +3980,37 @@ var GeomorphicResponses = function GeomorphicResponses(_ref) {
       label: 'Wall: Bar Edge',
       value: 'FULL'
     }]
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (GeomorphicResponses);
+  }]
+});
 
 /***/ }),
 
-/***/ "./src/components/BDAMobile/sections/HydraulicResponses.jsx":
-/*!******************************************************************!*\
-  !*** ./src/components/BDAMobile/sections/HydraulicResponses.jsx ***!
-  \******************************************************************/
+/***/ "./src/components/BDAMobile/sections/hydraulicResponse.js":
+/*!****************************************************************!*\
+  !*** ./src/components/BDAMobile/sections/hydraulicResponse.js ***!
+  \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../questions/RadioQuestion */ "./src/components/BDAMobile/questions/RadioQuestion.jsx");
 /* harmony import */ var _questions_PercentSliders_PercentSliders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../questions/PercentSliders/PercentSliders */ "./src/components/BDAMobile/questions/PercentSliders/PercentSliders.jsx");
-/* harmony import */ var _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../questions/RadioQuestion */ "./src/components/BDAMobile/questions/RadioQuestion.jsx");
-/* harmony import */ var _questions_Checkboxes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../questions/Checkboxes */ "./src/components/BDAMobile/questions/Checkboxes.jsx");
-/* harmony import */ var _questions_FloodBehavior__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../questions/FloodBehavior */ "./src/components/BDAMobile/questions/FloodBehavior.jsx");
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var _questions_Checkboxes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../questions/Checkboxes */ "./src/components/BDAMobile/questions/Checkboxes.jsx");
+/* harmony import */ var _questions_FloodBehavior__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../questions/FloodBehavior */ "./src/components/BDAMobile/questions/FloodBehavior.jsx");
 
 
 
 
-
-
-
-var HydraulicResponses = function HydraulicResponses(_ref) {
-  var id = _ref.id,
-      present = _ref.present;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Header"], {
-    as: "h3"
-  }, "Low Flow Behavior"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_PercentSliders_PercentSliders__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "Channel Spanners:",
+/* harmony default export */ __webpack_exports__["default"] = ({
+  title: 'Anticipated Hydraulic Response',
+  description: 'What do you expect to happen?',
+  fields: [// HydraulicResponses
+  {
+    component: _questions_PercentSliders_PercentSliders__WEBPACK_IMPORTED_MODULE_1__["default"],
+    title: 'Channel Spanners:',
     mustAddUp: true,
-    name: "channelSpanners",
-    present: present,
+    name: 'channelSpanners',
     options: [{
       label: 'Flow Over Top',
       name: 'OVER_TOP'
@@ -3894,11 +4027,11 @@ var HydraulicResponses = function HydraulicResponses(_ref) {
       label: 'Flow Around Right',
       name: 'AROUND_RIGHT'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_PercentSliders_PercentSliders__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "Non-Channel Spanners:",
+  }, {
+    component: _questions_PercentSliders_PercentSliders__WEBPACK_IMPORTED_MODULE_1__["default"],
+    title: 'Non-Channel Spanners:',
     mustAddUp: true,
-    name: "nonChannelSpanners",
-    present: present,
+    name: 'nonChannelSpanners',
     options: [{
       label: 'Shunted Flow Left',
       name: 'SHUNT_LEFT'
@@ -3915,18 +4048,18 @@ var HydraulicResponses = function HydraulicResponses(_ref) {
       label: 'Flow Under Bottom',
       name: 'UNDER'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Divider"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_FloodBehavior__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    label: "Typical Flood Behavior",
-    name: "TypicalFlood",
-    present: present
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_FloodBehavior__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    label: "Big Flood Behavior",
-    name: "BigFlood",
-    present: present
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Estimated Upstream Zone of Hydraulic Influence",
-    name: "upstreamHydraulicInfluence",
-    present: present,
+  }, {
+    component: _questions_FloodBehavior__WEBPACK_IMPORTED_MODULE_3__["default"],
+    label: 'Typical Flood Behavior',
+    name: 'TypicalFlood'
+  }, {
+    component: _questions_FloodBehavior__WEBPACK_IMPORTED_MODULE_3__["default"],
+    label: 'Big Flood Behavior',
+    name: 'BigFlood'
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Estimated Upstream Zone of Hydraulic Influence',
+    name: 'upstreamHydraulicInfluence',
     options: [{
       label: '< 1 BFW',
       value: '1'
@@ -3943,10 +4076,10 @@ var HydraulicResponses = function HydraulicResponses(_ref) {
       label: '> 10 BFW',
       value: '10-INF'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Estimated Downstream Zone of Hydraulic Influence",
-    name: "downstreamHydraulicInfluence",
-    present: present,
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Estimated Downstream Zone of Hydraulic Influence',
+    name: 'downstreamHydraulicInfluence',
     options: [{
       label: '< 1 BFW',
       value: '1'
@@ -3963,10 +4096,10 @@ var HydraulicResponses = function HydraulicResponses(_ref) {
       label: '> 10 BFW',
       value: '10-INF'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_Checkboxes__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Side Channel Forced",
-    name: "sideChannelForced",
-    present: present,
+  }, {
+    component: _questions_Checkboxes__WEBPACK_IMPORTED_MODULE_2__["default"],
+    title: 'Side Channel Forced',
+    name: 'sideChannelForced',
     options: [{
       label: 'None',
       value: 'None'
@@ -3983,10 +4116,10 @@ var HydraulicResponses = function HydraulicResponses(_ref) {
       label: 'Multiple Right',
       value: 'Multiple Right'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Pond Extend",
-    name: "pondExtend",
-    present: present,
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Pond Extend',
+    name: 'pondExtend',
     options: [{
       label: 'Contained within bankfull channel',
       value: 'Contained'
@@ -3997,10 +4130,10 @@ var HydraulicResponses = function HydraulicResponses(_ref) {
       label: 'Drained',
       value: 'Drained'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_Checkboxes__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Floodplain Inundation",
-    name: "floodplainInundation",
-    present: present,
+  }, {
+    component: _questions_Checkboxes__WEBPACK_IMPORTED_MODULE_2__["default"],
+    title: 'Floodplain Inundation',
+    name: 'floodplainInundation',
     options: [{
       label: 'During Extreme Floods River Left',
       value: 'EXTREME_LEFT'
@@ -4020,45 +4153,64 @@ var HydraulicResponses = function HydraulicResponses(_ref) {
       label: 'Year Round Inundation River Right',
       value: 'ALLYEAR_RIGHT'
     }]
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (HydraulicResponses);
+  }]
+});
 
 /***/ }),
 
-/***/ "./src/components/BDAMobile/sections/PositionAttrib.jsx":
-/*!**************************************************************!*\
-  !*** ./src/components/BDAMobile/sections/PositionAttrib.jsx ***!
-  \**************************************************************/
+/***/ "./src/components/BDAMobile/sections/index.js":
+/*!****************************************************!*\
+  !*** ./src/components/BDAMobile/sections/index.js ***!
+  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _questions_LocationPicker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../questions/LocationPicker */ "./src/components/BDAMobile/questions/LocationPicker.jsx");
-/* harmony import */ var _questions_TextField__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../questions/TextField */ "./src/components/BDAMobile/questions/TextField.jsx");
-/* harmony import */ var _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../questions/RadioQuestion */ "./src/components/BDAMobile/questions/RadioQuestion.jsx");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../config */ "./src/config.js");
+/* harmony import */ var _geomorphicResponse__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./geomorphicResponse */ "./src/components/BDAMobile/sections/geomorphicResponse.js");
+/* harmony import */ var _designInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./designInfo */ "./src/components/BDAMobile/sections/designInfo.js");
+/* harmony import */ var _positionalAttrib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./positionalAttrib */ "./src/components/BDAMobile/sections/positionalAttrib.js");
+/* harmony import */ var _existingFeatures__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./existingFeatures */ "./src/components/BDAMobile/sections/existingFeatures.js");
+/* harmony import */ var _structureDesign__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./structureDesign */ "./src/components/BDAMobile/sections/structureDesign.js");
+/* harmony import */ var _hydraulicResponse__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./hydraulicResponse */ "./src/components/BDAMobile/sections/hydraulicResponse.js");
 
 
 
 
 
 
-var PositionAttrib = function PositionAttrib(_ref) {
-  var id = _ref.id,
-      present = _ref.present;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_LocationPicker__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    present: present,
-    name: "location",
-    mapboxApiAccessToken: _config__WEBPACK_IMPORTED_MODULE_4__["mapBoxToken"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "structureChannelLocation",
-    present: present,
-    title: "Structure Location Relative to Channel(s)",
+/* harmony default export */ __webpack_exports__["default"] = ([_designInfo__WEBPACK_IMPORTED_MODULE_1__["default"], _positionalAttrib__WEBPACK_IMPORTED_MODULE_2__["default"], _structureDesign__WEBPACK_IMPORTED_MODULE_4__["default"], _existingFeatures__WEBPACK_IMPORTED_MODULE_3__["default"], _hydraulicResponse__WEBPACK_IMPORTED_MODULE_5__["default"], _geomorphicResponse__WEBPACK_IMPORTED_MODULE_0__["default"]]);
+
+/***/ }),
+
+/***/ "./src/components/BDAMobile/sections/positionalAttrib.js":
+/*!***************************************************************!*\
+  !*** ./src/components/BDAMobile/sections/positionalAttrib.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../questions/RadioQuestion */ "./src/components/BDAMobile/questions/RadioQuestion.jsx");
+/* harmony import */ var _questions_TextField__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../questions/TextField */ "./src/components/BDAMobile/questions/TextField.jsx");
+/* harmony import */ var _questions_LocationPicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../questions/LocationPicker */ "./src/components/BDAMobile/questions/LocationPicker.jsx");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../config */ "./src/config.js");
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  title: 'Positional Attributes',
+  description: 'The position of your structure',
+  fields: [{
+    component: _questions_LocationPicker__WEBPACK_IMPORTED_MODULE_2__["default"],
+    name: 'location',
+    mapboxApiAccessToken: _config__WEBPACK_IMPORTED_MODULE_3__["mapBoxToken"]
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    name: 'structureChannelLocation',
+    title: 'Structure Location Relative to Channel(s)',
     options: [{
       label: 'On Main Channel',
       value: 'MAIN_CHANNEL'
@@ -4075,14 +4227,14 @@ var PositionAttrib = function PositionAttrib(_ref) {
       label: 'On Left Floodplain',
       value: 'FLOODPLAIN_R'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_TextField__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    name: "complex",
-    present: present,
-    label: "Complex:",
-    placeholder: "COMPLEX_323123 ... 1233"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "complexExtended",
-    present: present,
+  }, {
+    component: _questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"],
+    name: 'complex',
+    label: 'Complex:',
+    placeholder: 'COMPLEX_323123 ... 1233'
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    name: 'complexExtended',
     options: [{
       label: 'Part of new dam complex',
       value: 'NEW_DAM_COMPLEX'
@@ -4096,39 +4248,195 @@ var PositionAttrib = function PositionAttrib(_ref) {
       label: 'NA - Non-Dam',
       value: 'NA_NON_DAM'
     }]
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (PositionAttrib);
+  }]
+});
 
 /***/ }),
 
-/***/ "./src/components/BDAMobile/sections/StructureDesign.jsx":
+/***/ "./src/components/BDAMobile/sections/sections.fixture.js":
 /*!***************************************************************!*\
-  !*** ./src/components/BDAMobile/sections/StructureDesign.jsx ***!
+  !*** ./src/components/BDAMobile/sections/sections.fixture.js ***!
   \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// import React from 'react'
+// import DesignInfo from './DesignInfo'
+// import PositionAttrib from './PositionAttrib'
+// import StructureDesign from './StructureDesign'
+// import ExistingFeatures from './ExistingFeatures'
+// import HydraulicResponses from './HydraulicResponses'
+// import GeomorphicResponses from './GeomorphicResponses'
+// import TheForm from './TheForm'
+// import config from '../../../config'
+// import TheFormComplex from './TheFormComplex'
+// // Just set us up with a dummy redux state so we can test things
+// const reduxHelper = (valObj) => ({
+//   editing: {
+//     guid: 'GUID_222'
+//   },
+//   structures: {
+//     'GUID_222': {
+//       fields: { }
+//     }
+//   }
+// })
+// const fixtures = []
+// const devFixtures = [
+//   {
+//     name: 'Design Info',
+//     component: DesignInfo,
+//     wrapForm: true,
+//     reduxState: reduxHelper(),
+//     props: {
+//       present: false
+//     }
+//   },
+//   {
+//     name: 'Position Attrib',
+//     component: PositionAttrib,
+//     wrapForm: true,
+//     reduxState: reduxHelper(),
+//     props: {
+//       present: false
+//     }
+//   },
+//   {
+//     name: 'ExistingFeatures',
+//     component: ExistingFeatures,
+//     wrapForm: true,
+//     reduxState: reduxHelper(),
+//     props: {
+//       present: false
+//     }
+//   },
+//   {
+//     name: 'HydraulicResponses',
+//     component: HydraulicResponses,
+//     wrapForm: true,
+//     reduxState: reduxHelper(),
+//     props: {
+//       present: false
+//     }
+//   },
+//   {
+//     name: 'Structure Design',
+//     component: StructureDesign,
+//     wrapForm: true,
+//     reduxState: reduxHelper(),
+//     props: {
+//       present: false
+//     }
+//   },
+//   {
+//     name: 'Geomorphic Responses',
+//     component: GeomorphicResponses,
+//     wrapForm: true,
+//     props: {
+//       present: false
+//     }
+//   },
+//   {
+//     name: 'The Form',
+//     component: TheForm,
+//     props: {
+//       steps: [
+//         {
+//           title: 'Overview',
+//           description: 'do a thing',
+//           complete: true,
+//           content: <DesignInfo />
+//         },
+//         {
+//           title: 'River',
+//           description: 'do a thing',
+//           content: 'Step 2. Laboris irure deserunt eu ad nulla adipisicing minim tempor minim magna. Minim ipsum cupidatat quis aliqua et officia deserunt Lorem laboris ex ad qui Lorem minim. Ipsum consequat eu magna esse.'
+//         },
+//         {
+//           title: 'Design',
+//           description: 'do a thing',
+//           content: 'Step 3. Dolore cillum reprehenderit quis laborum do esse sint non velit mollit ipsum. Aliquip laboris ad dolor magna nostrud sint. Id consectetur dolore incididunt sint. Do officia deserunt reprehenderit velit do quis sunt.'
+//         }
+//       ]
+//     }
+//   },
+//   {
+//     name: 'The Form Complex',
+//     component: TheFormComplex,
+//     reduxState: reduxHelper(),
+//     props: {
+//       steps: [
+//         {
+//           title: 'Design Info',
+//           description: 'do a thing',
+//           complete: true,
+//           Component: DesignInfo
+//         },
+//         {
+//           title: 'Positional Attributes',
+//           description: 'do a thing',
+//           complete: false,
+//           Component: PositionAttrib
+//         },
+//         {
+//           title: 'Structure Design',
+//           description: 'do a thing',
+//           complete: false,
+//           Component: StructureDesign
+//         },
+//         {
+//           title: 'Existing Features',
+//           description: 'do a thing',
+//           complete: false,
+//           Component: ExistingFeatures
+//         },
+//         {
+//           title: 'Anticipated Hydraulic Response',
+//           description: 'do a thing',
+//           complete: false,
+//           Component: HydraulicResponses
+//         },
+//         {
+//           title: 'Anticipated Geomorphic Responses',
+//           description: 'do a thing',
+//           complete: false,
+//           Component: GeomorphicResponses
+//         }
+//       ]
+//     }
+//   }
+// ]
+// const finalFixes = [...fixtures, ...(config.env === 'development' ? devFixtures : [])].map(fix => {
+//   fix.component.displayName = `BDA Mobile App/Sections/${fix.component.name}`
+//   return fix
+// })
+// export default finalFixes
+
+/***/ }),
+
+/***/ "./src/components/BDAMobile/sections/structureDesign.js":
+/*!**************************************************************!*\
+  !*** ./src/components/BDAMobile/sections/structureDesign.js ***!
+  \**************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../questions/RadioQuestion */ "./src/components/BDAMobile/questions/RadioQuestion.jsx");
 /* harmony import */ var _questions_TextField__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../questions/TextField */ "./src/components/BDAMobile/questions/TextField.jsx");
 /* harmony import */ var _questions_DropDownQuestion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../questions/DropDownQuestion */ "./src/components/BDAMobile/questions/DropDownQuestion.jsx");
-/* harmony import */ var _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../questions/RadioQuestion */ "./src/components/BDAMobile/questions/RadioQuestion.jsx");
 
 
+ // mostly just for debugging
 
-
-
-var StructureDesign = function StructureDesign(_ref) {
-  var id = _ref.id,
-      present = _ref.present;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Structure Position",
-    name: "structurePosition",
-    present: present,
+/* harmony default export */ __webpack_exports__["default"] = ({
+  title: 'Structure Design',
+  description: 'The structure of your design',
+  fields: [{
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Structure Position',
+    name: 'structurePosition',
     options: [{
       label: 'River Right Margin Attached',
       value: 'RIVER_RIGHT_MARGIN_ATTACHED'
@@ -4142,10 +4450,10 @@ var StructureDesign = function StructureDesign(_ref) {
       label: 'Mid Channel',
       value: 'MID_CHANNEL'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Structure Orientation",
-    name: "structureOrientation",
-    present: present,
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Structure Orientation',
+    name: 'structureOrientation',
     options: [{
       label: 'Perpendicular to Flow',
       value: 'PERPENDICULAR'
@@ -4165,10 +4473,10 @@ var StructureDesign = function StructureDesign(_ref) {
       label: 'Triangle Pointing DownStrream',
       value: 'TRIANGLE_DOWN'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Channel Constriction (% of Bankfull Width)",
-    name: "channelConstriction",
-    present: present,
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    title: 'Channel Constriction (% of Bankfull Width)',
+    name: 'channelConstriction',
     options: [{
       label: '100% BFW',
       value: '100'
@@ -4188,22 +4496,22 @@ var StructureDesign = function StructureDesign(_ref) {
       label: '< 25%',
       value: 'LT25'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    name: "numPosts",
-    present: present,
-    label: "Number of Posts",
-    placeholder: "1,2,3",
-    type: "number"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_DropDownQuestion__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Structure Materials",
-    name: "structureMaterials",
-    present: present,
+  }, {
+    component: _questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"],
+    name: 'numPosts',
+    label: 'Number of Posts',
+    placeholder: '1,2,3',
+    type: 'number'
+  }, {
+    component: _questions_DropDownQuestion__WEBPACK_IMPORTED_MODULE_2__["default"],
+    title: 'Structure Materials',
+    name: 'structureMaterials',
     fluid: true,
     multiple: true,
     search: true,
     selection: true,
     allowAdditions: true,
-    placeholder: "Choose all that apply...",
+    placeholder: 'Choose all that apply...',
     options: [{
       text: 'Willow Weave',
       value: 'Willow Weave'
@@ -4247,9 +4555,9 @@ var StructureDesign = function StructureDesign(_ref) {
       text: 'Dowelled or Twine tied Simple Logs',
       value: 'Dowelled or Twine tied Simple Logs'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "materialSources",
-    present: present,
+  }, {
+    component: _questions_RadioQuestion__WEBPACK_IMPORTED_MODULE_0__["default"],
+    name: 'materialSources',
     options: [{
       label: 'Material Sourced on site',
       value: 'ONSITE'
@@ -4257,547 +4565,143 @@ var StructureDesign = function StructureDesign(_ref) {
       label: 'Materials Imported',
       value: 'IMPORTED'
     }]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    name: "maxStrucHeight",
-    present: present,
-    label: "Max dam/structure height (m) \xB10.1m",
-    placeholder: "2.4",
-    type: "text"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    name: "maxPondDepth",
-    present: present,
-    label: "Max pond depth (m if applicable) \xB10.1m",
-    placeholder: "2.4",
-    type: "text"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    name: "waterSurfDiff",
-    present: present,
-    label: "Water surface difference (m if applicable) \xB10.1m",
-    placeholder: "2.4",
-    type: "text"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    name: "structLength",
-    present: present,
-    label: "Structure Length (m) \xB11.0m",
-    placeholder: "3.0",
-    type: "text"
+  }, {
+    component: _questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"],
+    name: 'maxStrucHeight',
+    label: 'Max dam/structure height (m) ±0.1m',
+    placeholder: '2.4',
+    type: 'text'
+  }, {
+    component: _questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"],
+    name: 'maxPondDepth',
+    label: 'Max pond depth (m if applicable) ±0.1m',
+    placeholder: '2.4',
+    type: 'text'
+  }, {
+    component: _questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"],
+    name: 'waterSurfDiff',
+    label: 'Water surface difference (m if applicable) ±0.1m',
+    placeholder: '2.4',
+    type: 'text'
+  }, {
+    component: _questions_TextField__WEBPACK_IMPORTED_MODULE_1__["default"],
+    name: 'structLength',
+    label: 'Structure Length (m) ±1.0m',
+    placeholder: '3.0',
+    type: 'text'
+  }]
+});
+
+/***/ }),
+
+/***/ "./src/components/BDAMobile/views/HomeMap.jsx":
+/*!****************************************************!*\
+  !*** ./src/components/BDAMobile/views/HomeMap.jsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _common_maps_BaseMap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/maps/BaseMap */ "./src/components/common/maps/BaseMap.jsx");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var react_virtualized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-virtualized */ "./node_modules/react-virtualized/dist/es/index.js");
+/* harmony import */ var react_map_gl__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-map-gl */ "./node_modules/react-map-gl/dist/esm/index.js");
+/* harmony import */ var _lib_mapUtil__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../lib/mapUtil */ "./src/lib/mapUtil.js");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../config */ "./src/config.js");
+
+
+
+
+
+
+
+
+
+
+var MarkerMap = function MarkerMap(_ref) {
+  var data = _ref.data,
+      center = _ref.center,
+      bounds = _ref.bounds,
+      props = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["data", "center", "bounds"]);
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    style: {
+      minHeight: '100%'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_virtualized__WEBPACK_IMPORTED_MODULE_4__["AutoSizer"], null, function (_ref2) {
+    var height = _ref2.height,
+        width = _ref2.width;
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_common_maps_BaseMap__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({}, props, {
+      mapboxApiAccessToken: _config__WEBPACK_IMPORTED_MODULE_8__["mapBoxToken"],
+      maxBounds: bounds,
+      longitude: center[0],
+      latitude: center[1],
+      size: {
+        height: height < 500 ? 500 : height,
+        width: width
+      }
+    }), // Render props here
+    function (viewport) {
+      return data.map(function (_ref3, idx) {
+        var latitude = _ref3.latitude,
+            longitude = _ref3.longitude;
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_5__["Marker"], {
+          viewport: viewport,
+          key: "marker-".concat(idx),
+          longitude: longitude,
+          latitude: latitude,
+          offsetLeft: -20,
+          offsetTop: -30
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Popup"], {
+          flowing: true,
+          trigger: react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
+            className: "markerIcon",
+            name: "map marker",
+            size: "large",
+            color: "red",
+            style: {
+              textShadow: '2px 2px 2px #00000099'
+            }
+          })
+        }));
+      });
+    });
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (StructureDesign);
-
-/***/ }),
-
-/***/ "./src/components/BDAMobile/sections/TheForm.jsx":
-/*!*******************************************************!*\
-  !*** ./src/components/BDAMobile/sections/TheForm.jsx ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-
-
-
-
-var TheForm = function TheForm(_ref) {
-  var activeStep = _ref.activeStep,
-      steps = _ref.steps,
-      stepHeaders = _ref.stepHeaders;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Step"].Group, {
-    attached: "top",
-    ordered: true,
-    size: "mini",
-    unstackable: true,
-    fluid: true
-  }, stepHeaders, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Step"], {
-    link: true,
-    disabled: true
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Responsive"], {
-    minWidth: "800"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Step"].Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Step"].Title, null, "Confirmation"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Segment"], {
-    attached: true
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Responsive"], {
-    maxWidth: "800"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Header"], null, "Step ", activeStep + 1, ": ", steps[activeStep].title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, steps[activeStep].description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Divider"], null)), steps[activeStep || 0].content));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_2__["withState"])('activeStep', 'setActiveStep', 0), Object(recompose__WEBPACK_IMPORTED_MODULE_2__["withProps"])(function (props) {
-  return Object.assign({}, props, {
-    stepHeaders: props.steps.map(function (_ref2, idx) {
-      var title = _ref2.title,
-          description = _ref2.description,
-          complete = _ref2.complete;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Step"], {
-        link: true,
-        key: idx,
-        active: idx === props.activeStep,
-        completed: !!complete,
-        onClick: function onClick() {
-          return props.setActiveStep(idx);
-        }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Responsive"], {
-        minWidth: "800"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Step"].Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Step"].Title, null, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Step"].Description, null, description))));
-    })
-  });
-}))(TheForm));
-
-/***/ }),
-
-/***/ "./src/components/BDAMobile/sections/TheFormComplex.css":
-/*!**************************************************************!*\
-  !*** ./src/components/BDAMobile/sections/TheFormComplex.css ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../../node_modules/postcss-loader/src??postcss!./TheFormComplex.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/BDAMobile/sections/TheFormComplex.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(true) {
-	module.hot.accept(/*! !../../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../../node_modules/postcss-loader/src??postcss!./TheFormComplex.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/BDAMobile/sections/TheFormComplex.css", function() {
-		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../../node_modules/postcss-loader/src??postcss!./TheFormComplex.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/BDAMobile/sections/TheFormComplex.css");
-
-		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-
-		var locals = (function(a, b) {
-			var key, idx = 0;
-
-			for(key in a) {
-				if(!b || a[key] !== b[key]) return false;
-				idx++;
-			}
-
-			for(key in b) idx--;
-
-			return idx === 0;
-		}(content.locals, newContent.locals));
-
-		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
-
-		update(newContent);
-	});
-
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ "./src/components/BDAMobile/sections/TheFormComplex.jsx":
-/*!**************************************************************!*\
-  !*** ./src/components/BDAMobile/sections/TheFormComplex.jsx ***!
-  \**************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-/* harmony import */ var _TheFormComplex_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./TheFormComplex.css */ "./src/components/BDAMobile/sections/TheFormComplex.css");
-/* harmony import */ var _TheFormComplex_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_TheFormComplex_css__WEBPACK_IMPORTED_MODULE_6__);
-
-
-
-var _this = undefined;
-
-
-
-
-
-
-
-var TheFormComplex = function TheFormComplex(_ref) {
-  var activeStep = _ref.activeStep,
-      steps = _ref.steps,
-      stepHeaders = _ref.stepHeaders,
-      sidebarVisible = _ref.sidebarVisible,
-      setSidebarVisible = _ref.setSidebarVisible,
-      setActiveStep = _ref.setActiveStep;
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    style: {
-      height: '100%'
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TopbarEditing, {
-    activeStep: activeStep,
-    sidebarVisible: sidebarVisible,
-    steps: steps,
-    setSidebarVisible: setSidebarVisible,
-    setActiveStep: setActiveStep
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Sidebar"].Pushable, {
-    as: "div"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Sidebar"], {
-    as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"],
-    animation: "overlay",
-    icon: "labeled",
-    inverted: true,
-    onHide: _this.handleSidebarHide,
-    vertical: true,
-    visible: sidebarVisible,
-    width: "wide"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Step"].Group, {
-    attached: "top",
-    style: {
-      marginTop: '40px'
-    },
-    vertical: true,
-    ordered: true,
-    size: "mini",
-    fluid: true
-  }, stepHeaders)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Sidebar"].Pusher, {
-    style: {
-      marginTop: '40px'
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Dimmer"].Dimmable, {
-    as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Segment"],
-    attached: true,
-    blurring: true
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Dimmer"], {
-    active: sidebarVisible,
-    onClick: function onClick() {
-      return setSidebarVisible(false);
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Responsive"], {
-    maxWidth: "800"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, steps[activeStep] && steps[activeStep].description), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Divider"], null)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Form"], null, steps.map(function (_ref2, idx) {
-    var Component = _ref2.Component;
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-      key: "stepComp".concat(idx),
-      style: {
-        display: activeStep === idx || !activeStep && idx === 0 ? '' : 'none'
-      }
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, null));
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"], {
-    icon: true,
-    style: {
-      borderRadius: 0
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Menu, {
-    position: "right"
-  }, activeStep < 1 ? null : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
-    onClick: function onClick() {
-      setActiveStep(activeStep - 1);
-      setSidebarVisible(false);
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
-    name: "arrow circle left"
-  }), "Previous Step"), activeStep >= steps.length - 1 ? null : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
-    onClick: function onClick() {
-      setActiveStep(activeStep + 1);
-      setSidebarVisible(false);
-    }
-  }, "Next Step", react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
-    name: "arrow circle right"
-  }))))))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withState"])('activeStep', 'setActiveStep', 0), Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withState"])('sidebarVisible', 'setSidebarVisible', false), Object(recompose__WEBPACK_IMPORTED_MODULE_4__["mapProps"])(function (initProps) {
-  var confirmStep = {
-    title: 'Confirmation',
-    description: 'Make sure everything is right',
-    Component: function Component() {
-      return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-        className: "presentForm"
-      }, initProps.steps.map(function (_ref3, idx) {
-        var Component = _ref3.Component;
-        return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, {
-          present: true,
-          key: "presentComponent".concat(idx)
-        });
-      }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(ConfirmMenu, null));
-    }
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_7__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_7__["withProps"])(function (_ref4) {
+  var structures = _ref4.structures;
+  var noData = {
+    latitude: 49.3050394,
+    longitude: -123.1398254
   };
-
-  var newSteps = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(initProps.steps).concat([confirmStep]); //
-
-
-  var stepHeaders = newSteps.map(function (_ref4, idx) {
-    var title = _ref4.title,
-        description = _ref4.description,
-        complete = _ref4.complete;
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Step"], {
-      link: true,
-      key: idx,
-      active: idx === initProps.activeStep,
-      completed: !!complete,
-      onClick: function onClick() {
-        initProps.setActiveStep(idx);
-        initProps.setSidebarVisible(false);
-      }
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Step"].Content, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Step"].Title, null, title), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Step"].Description, null, description)));
+  var data = [];
+  structures.forEach(function (struct) {
+    try {
+      var _JSON$parse$location$ = JSON.parse(struct.body)['location'].value,
+          latitude = _JSON$parse$location$.latitude,
+          longitude = _JSON$parse$location$.longitude;
+      data.push({
+        latitude: latitude,
+        longitude: longitude
+      });
+    } catch (e) {}
   });
-  return Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, initProps, {
-    steps: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(newSteps),
-    stepHeaders: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(stepHeaders) // confirmHeader
-
-  });
-}))(TheFormComplex));
-var ConfirmMenu = Object(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withReduxHome"])(function (_ref5) {
-  var guid = _ref5.editing.guid,
-      deleteStructure = _ref5.deleteStructure,
-      backToHome = _ref5.backToHome;
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"], {
-    icon: true,
-    style: {
-      borderRadius: 0
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Menu, {
-    position: "right"
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Button"], {
-    content: "Cancel",
-    color: "red",
-    icon: "ban",
-    onClick: function onClick() {
-      // deleteStructure(guid)
-      backToHome();
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Button"], {
-    content: "Save",
-    color: "green",
-    icon: "save",
-    onClick: backToHome
-  }))));
-});
-var TopbarEditing = Object(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withReduxHome"])(function (_ref6) {
-  var backToHome = _ref6.backToHome,
-      activeStep = _ref6.activeStep,
-      sidebarVisible = _ref6.sidebarVisible,
-      steps = _ref6.steps,
-      setSidebarVisible = _ref6.setSidebarVisible,
-      setActiveStep = _ref6.setActiveStep;
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"], {
-    className: "theFormComplexMenu",
-    fixed: "top",
-    icon: true,
-    inverted: true,
-    style: {
-      borderRadius: 0
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
-    onClick: backToHome
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
-    name: "home"
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
-    name: "bars",
-    onClick: function onClick() {
-      return setSidebarVisible(!sidebarVisible);
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
-    name: "bars"
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
-    style: {
-      maxWidth: '48%'
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Header"], {
-    as: "div",
-    style: {
-      fontSize: '0.8rem'
-    },
-    inverted: true
-  }, "Step ", activeStep + 1, ": ", steps[activeStep].title)), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Menu, {
-    position: "right"
-  }, activeStep < 1 ? null : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
-    onClick: function onClick() {
-      setActiveStep(activeStep - 1);
-      setSidebarVisible(false);
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
-    name: "arrow circle left"
-  })), activeStep >= steps.length - 1 ? null : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
-    onClick: function onClick() {
-      setActiveStep(activeStep + 1);
-      setSidebarVisible(false);
-    }
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
-    name: "arrow circle right"
-  }))));
-});
-
-/***/ }),
-
-/***/ "./src/components/BDAMobile/sections/sections.fixture.js":
-/*!***************************************************************!*\
-  !*** ./src/components/BDAMobile/sections/sections.fixture.js ***!
-  \***************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _DesignInfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DesignInfo */ "./src/components/BDAMobile/sections/DesignInfo.jsx");
-/* harmony import */ var _PositionAttrib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./PositionAttrib */ "./src/components/BDAMobile/sections/PositionAttrib.jsx");
-/* harmony import */ var _StructureDesign__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./StructureDesign */ "./src/components/BDAMobile/sections/StructureDesign.jsx");
-/* harmony import */ var _ExistingFeatures__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ExistingFeatures */ "./src/components/BDAMobile/sections/ExistingFeatures.jsx");
-/* harmony import */ var _HydraulicResponses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./HydraulicResponses */ "./src/components/BDAMobile/sections/HydraulicResponses.jsx");
-/* harmony import */ var _GeomorphicResponses__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./GeomorphicResponses */ "./src/components/BDAMobile/sections/GeomorphicResponses.jsx");
-/* harmony import */ var _TheForm__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./TheForm */ "./src/components/BDAMobile/sections/TheForm.jsx");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../config */ "./src/config.js");
-/* harmony import */ var _TheFormComplex__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./TheFormComplex */ "./src/components/BDAMobile/sections/TheFormComplex.jsx");
-
-
-
-
-
-
-
-
-
-
- // Just set us up with a dummy redux state so we can test things
-
-var reduxHelper = function reduxHelper(valObj) {
   return {
-    editing: {
-      guid: 'GUID_222'
-    },
-    structures: {
-      'GUID_222': {
-        fields: {}
-      }
-    }
+    data: data,
+    center: data.length > 0 ? Object(_lib_mapUtil__WEBPACK_IMPORTED_MODULE_6__["findCenter"])(data.map(function (d) {
+      return [d.longitude, d.latitude];
+    })) : [noData.longitude, noData.latitude],
+    bounds: data.length > 0 ? Object(_lib_mapUtil__WEBPACK_IMPORTED_MODULE_6__["findBounds"])(data.map(function (d) {
+      return [d.longitude, d.latitude];
+    })) : [noData.longitude - 0.01, noData.latitude - 0.01, noData.longitude + 0.01, noData.latitude + 0.01]
   };
-};
-
-var fixtures = [];
-var devFixtures = [{
-  name: 'Design Info',
-  component: _DesignInfo__WEBPACK_IMPORTED_MODULE_2__["default"],
-  wrapForm: true,
-  reduxState: reduxHelper(),
-  props: {
-    present: false
-  }
-}, {
-  name: 'Position Attrib',
-  component: _PositionAttrib__WEBPACK_IMPORTED_MODULE_3__["default"],
-  wrapForm: true,
-  reduxState: reduxHelper(),
-  props: {
-    present: false
-  }
-}, {
-  name: 'ExistingFeatures',
-  component: _ExistingFeatures__WEBPACK_IMPORTED_MODULE_5__["default"],
-  wrapForm: true,
-  reduxState: reduxHelper(),
-  props: {
-    present: false
-  }
-}, {
-  name: 'HydraulicResponses',
-  component: _HydraulicResponses__WEBPACK_IMPORTED_MODULE_6__["default"],
-  wrapForm: true,
-  reduxState: reduxHelper(),
-  props: {
-    present: false
-  }
-}, {
-  name: 'Structure Design',
-  component: _StructureDesign__WEBPACK_IMPORTED_MODULE_4__["default"],
-  wrapForm: true,
-  reduxState: reduxHelper(),
-  props: {
-    present: false
-  }
-}, {
-  name: 'Geomorphic Responses',
-  component: _GeomorphicResponses__WEBPACK_IMPORTED_MODULE_7__["default"],
-  wrapForm: true,
-  props: {
-    present: false
-  }
-}, {
-  name: 'The Form',
-  component: _TheForm__WEBPACK_IMPORTED_MODULE_8__["default"],
-  props: {
-    steps: [{
-      title: 'Overview',
-      description: 'do a thing',
-      complete: true,
-      content: react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_DesignInfo__WEBPACK_IMPORTED_MODULE_2__["default"], null)
-    }, {
-      title: 'River',
-      description: 'do a thing',
-      content: 'Step 2. Laboris irure deserunt eu ad nulla adipisicing minim tempor minim magna. Minim ipsum cupidatat quis aliqua et officia deserunt Lorem laboris ex ad qui Lorem minim. Ipsum consequat eu magna esse.'
-    }, {
-      title: 'Design',
-      description: 'do a thing',
-      content: 'Step 3. Dolore cillum reprehenderit quis laborum do esse sint non velit mollit ipsum. Aliquip laboris ad dolor magna nostrud sint. Id consectetur dolore incididunt sint. Do officia deserunt reprehenderit velit do quis sunt.'
-    }]
-  }
-}, {
-  name: 'The Form Complex',
-  component: _TheFormComplex__WEBPACK_IMPORTED_MODULE_10__["default"],
-  reduxState: reduxHelper(),
-  props: {
-    steps: [{
-      title: 'Design Info',
-      description: 'do a thing',
-      complete: true,
-      Component: _DesignInfo__WEBPACK_IMPORTED_MODULE_2__["default"]
-    }, {
-      title: 'Positional Attributes',
-      description: 'do a thing',
-      complete: false,
-      Component: _PositionAttrib__WEBPACK_IMPORTED_MODULE_3__["default"]
-    }, {
-      title: 'Structure Design',
-      description: 'do a thing',
-      complete: false,
-      Component: _StructureDesign__WEBPACK_IMPORTED_MODULE_4__["default"]
-    }, {
-      title: 'Existing Features',
-      description: 'do a thing',
-      complete: false,
-      Component: _ExistingFeatures__WEBPACK_IMPORTED_MODULE_5__["default"]
-    }, {
-      title: 'Anticipated Hydraulic Response',
-      description: 'do a thing',
-      complete: false,
-      Component: _HydraulicResponses__WEBPACK_IMPORTED_MODULE_6__["default"]
-    }, {
-      title: 'Anticipated Geomorphic Responses',
-      description: 'do a thing',
-      complete: false,
-      Component: _GeomorphicResponses__WEBPACK_IMPORTED_MODULE_7__["default"]
-    }]
-  }
-}];
-var finalFixes = fixtures.concat(Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_config__WEBPACK_IMPORTED_MODULE_9__["default"].env === 'development' ? devFixtures : [])).map(function (fix) {
-  fix.component.displayName = "BDA Mobile App/Sections/".concat(fix.component.name);
-  return fix;
-});
-/* harmony default export */ __webpack_exports__["default"] = (finalFixes);
+}))(MarkerMap));
 
 /***/ }),
 
@@ -4868,24 +4772,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _graphql_queries__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../graphql/queries */ "./src/graphql/queries.js");
-/* harmony import */ var _misc_Structures__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../misc/Structures */ "./src/components/BDAMobile/misc/Structures/index.js");
-/* harmony import */ var _Topbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Topbar */ "./src/components/BDAMobile/Topbar.jsx");
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var _StructureViewer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./StructureViewer */ "./src/components/BDAMobile/views/StructureViewer.jsx");
-/* harmony import */ var _TheBDAForm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./TheBDAForm */ "./src/components/BDAMobile/views/TheBDAForm.jsx");
-/* harmony import */ var _misc_Placeholder__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../misc/Placeholder */ "./src/components/misc/Placeholder.jsx");
-/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
-/* harmony import */ var _misc_AddButton__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../misc/AddButton */ "./src/components/BDAMobile/misc/AddButton.jsx");
-/* harmony import */ var _misc_RefreshStockButton__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../misc/RefreshStockButton */ "./src/components/BDAMobile/misc/RefreshStockButton.jsx");
-/* harmony import */ var _Homepage_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Homepage.css */ "./src/components/BDAMobile/views/Homepage.css");
-/* harmony import */ var _Homepage_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_Homepage_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! aws-amplify */ "./node_modules/aws-amplify/lib/index.js");
+/* harmony import */ var aws_amplify__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(aws_amplify__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _graphql_queries__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../graphql/queries */ "./src/graphql/queries.js");
+/* harmony import */ var _misc_Structures__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../misc/Structures */ "./src/components/BDAMobile/misc/Structures/index.js");
+/* harmony import */ var _Topbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Topbar */ "./src/components/BDAMobile/Topbar.jsx");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var _StructureViewer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./StructureViewer */ "./src/components/BDAMobile/views/StructureViewer.jsx");
+/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
+/* harmony import */ var _misc_AddButton__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../misc/AddButton */ "./src/components/BDAMobile/misc/AddButton.jsx");
+/* harmony import */ var _misc_RefreshStockButton__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../misc/RefreshStockButton */ "./src/components/BDAMobile/misc/RefreshStockButton.jsx");
+/* harmony import */ var _TheFormComplex__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./TheFormComplex */ "./src/components/BDAMobile/views/TheFormComplex.jsx");
+/* harmony import */ var _sections__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../sections */ "./src/components/BDAMobile/sections/index.js");
+/* harmony import */ var _HomeMap__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./HomeMap */ "./src/components/BDAMobile/views/HomeMap.jsx");
+/* harmony import */ var _Homepage_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Homepage.css */ "./src/components/BDAMobile/views/Homepage.css");
+/* harmony import */ var _Homepage_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_Homepage_css__WEBPACK_IMPORTED_MODULE_14__);
+
 
  // Now some graphql stuff
 
 
 
 
+
+ // import Placeholder from '../../misc/Placeholder'
 
 
 
@@ -4899,8 +4809,20 @@ var Homepage = function Homepage(_ref) {
   var structures = _ref.structures;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "appContainer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Topbar__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Tab"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Topbar__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_6__["Tab"], {
     className: "tabContainer",
+    menu: {
+      secondary: true,
+      inverted: true,
+      color: 'green',
+      icon: 'labeled',
+      size: 'large',
+      style: {
+        marginBottom: 0,
+        borderRadius: 0,
+        border: 0
+      }
+    },
     panes: [{
       menuItem: {
         key: 'users',
@@ -4908,9 +4830,9 @@ var Homepage = function Homepage(_ref) {
         content: 'List'
       },
       render: function render() {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Tab"].Pane, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_misc_Structures__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_6__["Tab"].Pane, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_misc_Structures__WEBPACK_IMPORTED_MODULE_4__["default"], {
           structures: structures
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_misc_AddButton__WEBPACK_IMPORTED_MODULE_10__["default"], null));
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_misc_AddButton__WEBPACK_IMPORTED_MODULE_9__["default"], null));
       }
     }, {
       menuItem: {
@@ -4919,10 +4841,8 @@ var Homepage = function Homepage(_ref) {
         content: 'Map'
       },
       render: function render() {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Tab"].Pane, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_misc_Placeholder__WEBPACK_IMPORTED_MODULE_8__["default"], {
-          minHeight: 400,
-          icon: "map",
-          title: "Fancy Pants Map"
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_6__["Tab"].Pane, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_HomeMap__WEBPACK_IMPORTED_MODULE_13__["default"], {
+          structures: structures
         }));
       }
     }, {
@@ -4932,19 +4852,43 @@ var Homepage = function Homepage(_ref) {
         content: 'Settings'
       },
       render: function render() {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_5__["Tab"].Pane, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_misc_RefreshStockButton__WEBPACK_IMPORTED_MODULE_11__["default"], null));
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_6__["Tab"].Pane, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_6__["Segment"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_6__["Header"], null, "Settings"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Click this button to add some stock entries."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_misc_RefreshStockButton__WEBPACK_IMPORTED_MODULE_10__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Or you might want to log out..."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_6__["Button"], {
+          color: "yellow",
+          size: "large",
+          icon: "lock open",
+          fluid: true,
+          content: "Log Out",
+          onClick: function onClick() {
+            aws_amplify__WEBPACK_IMPORTED_MODULE_2__["Auth"].signOut(); // This is a hack to force the page to refresh
+
+            window.location.replace('./');
+          }
+        })));
       }
     }]
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_1__["compose"])(_graphql_queries__WEBPACK_IMPORTED_MODULE_2__["withStructuresList"], _redux_withRedux__WEBPACK_IMPORTED_MODULE_9__["withReduxHome"], Object(recompose__WEBPACK_IMPORTED_MODULE_1__["branch"])(function (_ref2) {
+var TheBDAForm = function TheBDAForm(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TheFormComplex__WEBPACK_IMPORTED_MODULE_11__["default"], Object.assign({
+    sections: _sections__WEBPACK_IMPORTED_MODULE_12__["default"]
+  }, props));
+};
+/**
+ * We really should be using React Router or something but for now we only have 3 states anyway:
+ *    - List view (the one with tabs)
+ *    - Form view (data entry)
+ *    - View view (looking at the data being presented)
+ */
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_1__["compose"])(_graphql_queries__WEBPACK_IMPORTED_MODULE_3__["withStructuresList"], _redux_withRedux__WEBPACK_IMPORTED_MODULE_8__["withReduxHome"], Object(recompose__WEBPACK_IMPORTED_MODULE_1__["branch"])(function (_ref2) {
   var editing = _ref2.editing;
   return editing && editing.guid && editing.edit;
-}, Object(recompose__WEBPACK_IMPORTED_MODULE_1__["renderComponent"])(_TheBDAForm__WEBPACK_IMPORTED_MODULE_7__["default"])), Object(recompose__WEBPACK_IMPORTED_MODULE_1__["branch"])(function (_ref3) {
+}, Object(recompose__WEBPACK_IMPORTED_MODULE_1__["renderComponent"])(TheBDAForm)), Object(recompose__WEBPACK_IMPORTED_MODULE_1__["branch"])(function (_ref3) {
   var editing = _ref3.editing;
   return editing && editing.guid && !editing.edit;
-}, Object(recompose__WEBPACK_IMPORTED_MODULE_1__["renderComponent"])(_StructureViewer__WEBPACK_IMPORTED_MODULE_6__["default"])))(Homepage));
+}, Object(recompose__WEBPACK_IMPORTED_MODULE_1__["renderComponent"])(_StructureViewer__WEBPACK_IMPORTED_MODULE_7__["default"])))(Homepage));
 
 /***/ }),
 
@@ -4957,130 +4901,375 @@ var Homepage = function Homepage(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var _Topbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Topbar */ "./src/components/BDAMobile/Topbar.jsx");
-/* harmony import */ var _sections_DesignInfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sections/DesignInfo */ "./src/components/BDAMobile/sections/DesignInfo.jsx");
-/* harmony import */ var _sections_PositionAttrib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../sections/PositionAttrib */ "./src/components/BDAMobile/sections/PositionAttrib.jsx");
-/* harmony import */ var _sections_StructureDesign__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../sections/StructureDesign */ "./src/components/BDAMobile/sections/StructureDesign.jsx");
- // import PropTypes from 'prop-types'
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var _Topbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Topbar */ "./src/components/BDAMobile/Topbar.jsx");
+/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
+/* harmony import */ var _graphql_withFieldData__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../graphql/withFieldData */ "./src/graphql/withFieldData.js");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+/* harmony import */ var _sections__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../sections */ "./src/components/BDAMobile/sections/index.js");
 
 
- // Now import our form sections
 
 
 
- // import ExistingFeatures from '../sections/ExistingFeatures'
-// import HydraulicResponses from '../sections/HydraulicResponses'
-// import GeomorphicResponses from '../sections/GeomorphicResponses'
+
+ // Import our form elements
+
 
 /**
    * Same goes for the viewer
    */
 
-var StructureViewer = function StructureViewer() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+var StructureViewer = function StructureViewer(_ref) {
+  var structure = _ref.structure,
+      getValueProps = _ref.getValueProps;
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "appContainer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Topbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Segment"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Topbar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"], {
     style: {
-      marginTop: '40px'
+      marginTop: 0,
+      overflow: 'scroll'
     },
     className: "presentForm"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_DesignInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    present: true
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Divider"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_PositionAttrib__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    present: true
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Divider"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_StructureDesign__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    present: true
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Divider"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_StructureDesign__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    present: true
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Divider"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_StructureDesign__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    present: true
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Divider"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_StructureDesign__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    present: true
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Divider"], null)));
-}; // StructureViewer.propTypes = {
-//   thing: PropTypes.string
-// }
+  }, _sections__WEBPACK_IMPORTED_MODULE_7__["default"].map(function (item, idx) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      className: "section",
+      key: "section-".concat(idx)
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Header"], null, item.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      style: {
+        paddingLeft: '1.5rem'
+      }
+    }, item.fields.map(function (_ref2, idx) {
+      var Component = _ref2.component,
+          name = _ref2.name,
+          props = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref2, ["component", "name"]);
 
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, Object.assign({
+        key: "field-".concat(idx),
+        present: true,
+        name: name
+      }, props, getValueProps(name)));
+    }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Divider"], null)));
+  })));
+};
 
-/* harmony default export */ __webpack_exports__["default"] = (StructureViewer);
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_6__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_4__["withFormState"], _graphql_withFieldData__WEBPACK_IMPORTED_MODULE_5__["default"], Object(recompose__WEBPACK_IMPORTED_MODULE_6__["branch"])(function (_ref3) {
+  var structure = _ref3.structure;
+  return !structure;
+}, recompose__WEBPACK_IMPORTED_MODULE_6__["renderNothing"]))(StructureViewer));
 
 /***/ }),
 
-/***/ "./src/components/BDAMobile/views/TheBDAForm.jsx":
-/*!*******************************************************!*\
-  !*** ./src/components/BDAMobile/views/TheBDAForm.jsx ***!
-  \*******************************************************/
+/***/ "./src/components/BDAMobile/views/TheFormComplex.css":
+/*!***********************************************************!*\
+  !*** ./src/components/BDAMobile/views/TheFormComplex.css ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../../node_modules/postcss-loader/src??postcss!./TheFormComplex.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/BDAMobile/views/TheFormComplex.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../../node_modules/postcss-loader/src??postcss!./TheFormComplex.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/BDAMobile/views/TheFormComplex.css", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../../node_modules/postcss-loader/src??postcss!./TheFormComplex.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/BDAMobile/views/TheFormComplex.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/components/BDAMobile/views/TheFormComplex.jsx":
+/*!***********************************************************!*\
+  !*** ./src/components/BDAMobile/views/TheFormComplex.jsx ***!
+  \***********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sections_TheFormComplex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sections/TheFormComplex */ "./src/components/BDAMobile/sections/TheFormComplex.jsx");
-/* harmony import */ var _sections_DesignInfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../sections/DesignInfo */ "./src/components/BDAMobile/sections/DesignInfo.jsx");
-/* harmony import */ var _sections_PositionAttrib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sections/PositionAttrib */ "./src/components/BDAMobile/sections/PositionAttrib.jsx");
-/* harmony import */ var _sections_StructureDesign__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../sections/StructureDesign */ "./src/components/BDAMobile/sections/StructureDesign.jsx");
-/* harmony import */ var _sections_ExistingFeatures__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../sections/ExistingFeatures */ "./src/components/BDAMobile/sections/ExistingFeatures.jsx");
-/* harmony import */ var _sections_HydraulicResponses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../sections/HydraulicResponses */ "./src/components/BDAMobile/sections/HydraulicResponses.jsx");
-/* harmony import */ var _sections_GeomorphicResponses__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../sections/GeomorphicResponses */ "./src/components/BDAMobile/sections/GeomorphicResponses.jsx");
- // import PropTypes from 'prop-types'
-
- // Now import our form sections
-
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+/* harmony import */ var _redux_withRedux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../redux/withRedux */ "./src/redux/withRedux.js");
+/* harmony import */ var _graphql_withFieldData__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../graphql/withFieldData */ "./src/graphql/withFieldData.js");
+/* harmony import */ var _TheFormComplex_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./TheFormComplex.css */ "./src/components/BDAMobile/views/TheFormComplex.css");
+/* harmony import */ var _TheFormComplex_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_TheFormComplex_css__WEBPACK_IMPORTED_MODULE_8__);
 
 
 
 
 
 
-/**
- * The form is a really simple component so I'm lazy and just defining it here
- */
 
-var TheBDAForm = function TheBDAForm() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sections_TheFormComplex__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    steps: [{
-      title: 'Design Info',
-      description: 'Tell us something about your design',
-      complete: false,
-      Component: _sections_DesignInfo__WEBPACK_IMPORTED_MODULE_2__["default"]
-    }, {
-      title: 'Positional Attributes',
-      description: 'The position of your structure',
-      complete: false,
-      Component: _sections_PositionAttrib__WEBPACK_IMPORTED_MODULE_3__["default"]
-    }, {
-      title: 'Structure Design',
-      description: 'The structure of your design',
-      complete: false,
-      Component: _sections_StructureDesign__WEBPACK_IMPORTED_MODULE_4__["default"]
-    }, {
-      title: 'Existing Features',
-      description: 'are there any existing features?',
-      complete: false,
-      Component: _sections_ExistingFeatures__WEBPACK_IMPORTED_MODULE_5__["default"]
-    }, {
-      title: 'Anticipated Hydraulic Response',
-      description: 'What do you expect to happen?',
-      complete: false,
-      Component: _sections_HydraulicResponses__WEBPACK_IMPORTED_MODULE_6__["default"]
-    }, {
-      title: 'Anticipated Geomorphic Responses',
-      description: 'What geomorphic response do you anticipate?',
-      complete: false,
-      Component: _sections_GeomorphicResponses__WEBPACK_IMPORTED_MODULE_7__["default"]
-    }]
+
+
+
+var TheFormComplex = function TheFormComplex(_ref) {
+  var activeStep = _ref.activeStep,
+      sections = _ref.sections,
+      stepHeaders = _ref.stepHeaders,
+      sidebarVisible = _ref.sidebarVisible,
+      getValueProps = _ref.getValueProps,
+      setSidebarVisible = _ref.setSidebarVisible,
+      setActiveStep = _ref.setActiveStep,
+      setValue = _ref.setValue,
+      setNote = _ref.setNote;
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    style: {
+      height: '100%'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(TopbarEditing, {
+    activeStep: activeStep,
+    sidebarVisible: sidebarVisible,
+    sections: sections,
+    setSidebarVisible: setSidebarVisible,
+    setActiveStep: setActiveStep
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Sidebar"].Pushable, {
+    as: "div"
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Sidebar"], {
+    as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"],
+    animation: "overlay",
+    icon: "labeled",
+    inverted: true // onHide={this.handleSidebarHide}
+    ,
+    vertical: true,
+    visible: sidebarVisible,
+    width: "wide"
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Step"].Group, {
+    attached: "top",
+    style: {
+      marginTop: '40px'
+    },
+    vertical: true,
+    ordered: true,
+    size: "mini",
+    fluid: true
+  }, stepHeaders)), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Sidebar"].Pusher, {
+    style: {
+      marginTop: '40px',
+      marginBottom: '80px'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Dimmer"].Dimmable, {
+    as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Segment"],
+    attached: true,
+    blurring: true
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Dimmer"], {
+    active: sidebarVisible,
+    onClick: function onClick() {
+      return setSidebarVisible(false);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Responsive"], {
+    maxWidth: "800"
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("p", null, sections[activeStep] && sections[activeStep].description), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Divider"], null)), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Form"], null, sections.map(function (item, idx) {
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      key: "stepComp".concat(idx),
+      style: {
+        display: activeStep === idx || !activeStep && idx === 0 ? '' : 'none'
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      key: "sectionlabel-".concat(idx)
+    }, item.fields.map(function (_ref2, idx) {
+      var FieldComponent = _ref2.component,
+          name = _ref2.name,
+          props = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_2__["default"])(_ref2, ["component", "name"]);
+
+      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(FieldComponent, Object.assign({
+        key: "field-".concat(idx)
+      }, props, getValueProps(name)));
+    })));
+  }))))), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"], {
+    icon: true,
+    style: {
+      borderRadius: 0
+    },
+    fixed: "bottom",
+    inverted: true,
+    color: "blue"
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Menu, {
+    position: "right"
+  }, activeStep < 1 ? null : react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Item, {
+    onClick: function onClick() {
+      setActiveStep(activeStep - 1);
+      setSidebarVisible(false);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Icon"], {
+    name: "arrow circle left"
+  }), "Previous Step"), activeStep >= sections.length - 1 ? null : react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Item, {
+    onClick: function onClick() {
+      setActiveStep(activeStep + 1);
+      setSidebarVisible(false);
+    }
+  }, "Next Step", react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Icon"], {
+    name: "arrow circle right"
+  })))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_5__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_6__["withFormState"], _graphql_withFieldData__WEBPACK_IMPORTED_MODULE_7__["default"], recompose__WEBPACK_IMPORTED_MODULE_5__["pure"], Object(recompose__WEBPACK_IMPORTED_MODULE_5__["withState"])('activeStep', 'setActiveStep', 0), Object(recompose__WEBPACK_IMPORTED_MODULE_5__["withState"])('sidebarVisible', 'setSidebarVisible', false), Object(recompose__WEBPACK_IMPORTED_MODULE_5__["mapProps"])(function (initProps) {
+  var confirmStep = {
+    title: 'Confirmation',
+    description: 'Make sure everything is right',
+    Component: function Component() {
+      return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+        className: "presentForm"
+      }, initProps.sections.map(function (_ref3, idx) {
+        var Component = _ref3.Component;
+        return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, {
+          present: true,
+          key: "presentComponent".concat(idx)
+        });
+      }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(ConfirmMenu, null));
+    }
+  };
+
+  var newSections = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(initProps.sections).concat([confirmStep]); //
+
+
+  var stepHeaders = newSections.map(function (_ref4, idx) {
+    var title = _ref4.title,
+        description = _ref4.description,
+        complete = _ref4.complete;
+    return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Step"], {
+      link: true,
+      key: idx,
+      active: idx === initProps.activeStep,
+      completed: !!complete,
+      onClick: function onClick() {
+        initProps.setActiveStep(idx);
+        initProps.setSidebarVisible(false);
+      }
+    }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Step"].Content, null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Step"].Title, null, title), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Step"].Description, null, description)));
   });
-}; // TheBDAForm.propTypes = {
-//   thing: PropTypes.string
-// }
+  return Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, initProps, {
+    steps: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(newSections),
+    stepHeaders: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(stepHeaders) // confirmHeader
 
-
-/* harmony default export */ __webpack_exports__["default"] = (TheBDAForm);
+  });
+}))(TheFormComplex));
+var ConfirmMenu = Object(_redux_withRedux__WEBPACK_IMPORTED_MODULE_6__["withReduxHome"])(function (_ref5) {
+  var guid = _ref5.editing.guid,
+      backToHome = _ref5.backToHome;
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"], {
+    icon: true,
+    style: {
+      borderRadius: 0
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Menu, {
+    position: "right"
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Item, null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+    content: "Cancel",
+    color: "red",
+    icon: "ban",
+    onClick: function onClick() {
+      // deleteStructure(guid)
+      backToHome();
+    }
+  })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Item, null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+    content: "Save",
+    color: "green",
+    icon: "save",
+    onClick: backToHome
+  }))));
+});
+var TopbarEditing = Object(_redux_withRedux__WEBPACK_IMPORTED_MODULE_6__["withReduxHome"])(function (_ref6) {
+  var backToHome = _ref6.backToHome,
+      activeStep = _ref6.activeStep,
+      sidebarVisible = _ref6.sidebarVisible,
+      sections = _ref6.sections,
+      setSidebarVisible = _ref6.setSidebarVisible,
+      setActiveStep = _ref6.setActiveStep;
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"], {
+    className: "theFormComplexMenu",
+    fixed: "top",
+    icon: true,
+    inverted: true,
+    style: {
+      borderRadius: 0
+    },
+    color: "blue"
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Item, {
+    onClick: backToHome,
+    color: "black"
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Icon"], {
+    name: "home"
+  })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Item, {
+    name: "bars",
+    onClick: function onClick() {
+      return setSidebarVisible(!sidebarVisible);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Icon"], {
+    name: "bars"
+  })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Item, {
+    style: {
+      maxWidth: '48%'
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Header"], {
+    as: "div",
+    style: {
+      fontSize: '0.8rem'
+    },
+    inverted: true
+  }, "Step ", activeStep + 1, ": ", sections[activeStep].title)), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Menu, {
+    position: "right"
+  }, activeStep < 1 ? null : react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Item, {
+    onClick: function onClick() {
+      setActiveStep(activeStep - 1);
+      setSidebarVisible(false);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Icon"], {
+    name: "arrow circle left"
+  })), activeStep >= sections.length - 1 ? null : react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Menu"].Item, {
+    onClick: function onClick() {
+      setActiveStep(activeStep + 1);
+      setSidebarVisible(false);
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__["Icon"], {
+    name: "arrow circle right"
+  }))));
+});
 
 /***/ }),
 
@@ -5970,18 +6159,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
-/* harmony import */ var _misc_Placeholder__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../misc/Placeholder */ "./src/components/misc/Placeholder.jsx");
-/* harmony import */ var _Topbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Topbar */ "./src/components/CitizenBeaver/InputForm/Topbar.jsx");
-/* harmony import */ var _MapPreview__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MapPreview */ "./src/components/CitizenBeaver/InputForm/MapPreview.jsx");
-/* harmony import */ var _MapChooser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./MapChooser */ "./src/components/CitizenBeaver/InputForm/MapChooser.jsx");
-/* harmony import */ var _TheForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./TheForm */ "./src/components/CitizenBeaver/InputForm/TheForm.jsx");
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./style.css */ "./src/components/CitizenBeaver/InputForm/style.css");
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _Topbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Topbar */ "./src/components/CitizenBeaver/InputForm/Topbar.jsx");
+/* harmony import */ var _MapPreview__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MapPreview */ "./src/components/CitizenBeaver/InputForm/MapPreview.jsx");
+/* harmony import */ var _TheForm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TheForm */ "./src/components/CitizenBeaver/InputForm/TheForm.jsx");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.css */ "./src/components/CitizenBeaver/InputForm/style.css");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_5__);
+
+ // import Placeholder from '../../misc/Placeholder'
 
 
-
-
-
+ // import MapChooser from './MapChooser'
 
  // import {}
 
@@ -5996,7 +6183,7 @@ var InputForm = function InputForm(_ref) {
     style: {
       paddingTop: '40px'
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Topbar__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MapPreview__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Topbar__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_MapPreview__WEBPACK_IMPORTED_MODULE_3__["default"], {
     latitude: latitude,
     longitude: longitude,
     stylebuttons: false,
@@ -6009,7 +6196,7 @@ var InputForm = function InputForm(_ref) {
     style: {
       paddingTop: '0.5rem'
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TheForm__WEBPACK_IMPORTED_MODULE_6__["default"], null)));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_TheForm__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (InputForm);
@@ -6212,12 +6399,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ProjList_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ProjList.css */ "./src/components/Experiments/ProjList.css");
-/* harmony import */ var _ProjList_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ProjList_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-
+/* harmony import */ var _ProjList_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ProjList.css */ "./src/components/Experiments/ProjList.css");
+/* harmony import */ var _ProjList_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ProjList_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
 
 
 
@@ -6300,7 +6484,7 @@ var StructureItem = function StructureItem(_ref2) {
   }) : null));
 };
 
-var StructureItemProps = Object(recompose__WEBPACK_IMPORTED_MODULE_5__["withProps"])(function (_ref3) {
+var StructureItemProps = Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withProps"])(function (_ref3) {
   var uploaded = _ref3.uploaded,
       uploadFailed = _ref3.uploadFailed,
       uploading = _ref3.uploading;
@@ -7651,8 +7835,9 @@ var AuthStates = {
   newPasswordRequired: 'newPasswordRequired' // Need to supply a mapbox token (it's not secret. Putting it in git is fine)
 
 };
-var mapBoxToken = Object({"NODE_ENV":"production","PUBLIC_URL":"","REACT_APP_GRAPHQL":"https://jelwrai7pjcr5e2lmfskr5zpzq.appsync-api.us-west-2.amazonaws.com/graphql","REACT_APP_AWS_REGION":"us-west-2","REACT_APP_API_KEY":"m4dcwk5b75fwxl5zen63wjeaou","REACT_APP_COGNITO_CLIENT":"2kbuh7kcl2miv96ctdao340s4t","REACT_APP_MAPBOX_TOKEN":"pk.eyJ1IjoicmF5Y2hhc2VyIiwiYSI6IlFHWHVMSW8ifQ.emd44Ibp4cmT9YXitY1ziw","REACT_APP_USER_POOL_ID":"us-west-2_xuI6sjGDF","REACT_APP_DOMAIN":"northarrowresearchlabs.github.io","REACT_APP_COOKIEPATH":"/BDAPOC"}).REACT_APP_MAPBOXTOKEN;
+var mapBoxToken = "pk.eyJ1IjoicmF5Y2hhc2VyIiwiYSI6IlFHWHVMSW8ifQ.emd44Ibp4cmT9YXitY1ziw";
 var domain = "northarrowresearchlabs.github.io";
+var path = "/BDAPOC";
 
 if (false) {}
 
@@ -7679,10 +7864,10 @@ if (false) {}
       // REQUIRED - Cookie domain (only required if cookieStorage is provided)
       domain: "".concat(domain),
       // OPTIONAL - Cookie path
-      path: "/BDAPOC" || null,
+      path: path,
       // OPTIONAL - Cookie expiration in days
       expires: 20,
-      // OPTIONAL - Cookie secure flag (requires HTTP)
+      // OPTIONAL - Cookie secure flag (requires HTTPS)
       secure: true // OPTIONAL - customized storage object
       // storage: new MyStorage(),
       // OPTIONAL - Manually set the authentication flow type. Default is 'USER_SRP_AUTH'
@@ -7753,16 +7938,18 @@ if(true) {
 /*!********************************!*\
   !*** ./src/graphql/queries.js ***!
   \********************************/
-/*! exports provided: withStructuresList, withCreateStructure, withDeleteStructure */
+/*! exports provided: withGetStructure, withStructuresList, withCreateStructure, withDeleteStructure, withUpdateStructure */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withGetStructure", function() { return withGetStructure; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withStructuresList", function() { return withStructuresList; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withCreateStructure", function() { return withCreateStructure; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withDeleteStructure", function() { return withDeleteStructure; });
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withUpdateStructure", function() { return withUpdateStructure; });
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread.js");
 /* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/src/index.js");
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_3__);
@@ -7775,7 +7962,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject5() {
-  var data = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  mutation deleteBDAPOC($input: DeleteBDAPOCInput!) {\n    deleteBDAPOC(input: $input) {\n      id\n      body\n      lastEdit\n    }\n  }\n"]);
+  var data = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  mutation deleteBDAPOC($input: DeleteBDAPOCInput!) {\n    deleteBDAPOC(input: $input) {\n      id\n    }\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -7785,7 +7972,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  mutation updateBDAPOC($input: UpdateBDAPOCInput!) {\n    createBDAPOC(input: $input) {\n      id\n      body\n      lastEdit\n    }\n  }\n"]);
+  var data = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  mutation updateBDAPOC($input: UpdateBDAPOCInput!) {\n    updateBDAPOC(input: $input) {\n      id\n      body\n      lastEdit\n    }\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -7805,7 +7992,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  query getBDAPOC($id: ID!) {\n    createBDAPOC(input: $id) {\n      id\n      body\n      lastEdit\n    }\n  }\n"]);
+  var data = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  query getBDAPOC($id:ID!){\n    getBDAPOC(id:$id) {\n      id\n      body\n      lastEdit\n    }\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -7832,30 +8019,51 @@ var QueryGetStructure = graphql_tag__WEBPACK_IMPORTED_MODULE_3___default()(_temp
 var MutationCreateStructure = graphql_tag__WEBPACK_IMPORTED_MODULE_3___default()(_templateObject3());
 var MutationUpdateStructure = graphql_tag__WEBPACK_IMPORTED_MODULE_3___default()(_templateObject4());
 var MutationDeleteStructure = graphql_tag__WEBPACK_IMPORTED_MODULE_3___default()(_templateObject5());
-var withStructuresList = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["graphql"])(QueryListStructures, {
+var withGetStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["graphql"])(QueryGetStructure, {
   options: function options(_ref) {
-    var pollInterval = _ref.pollInterval;
+    var pollInterval = _ref.pollInterval,
+        editing = _ref.editing;
+    return {
+      fetchPolicy: 'cache-and-network',
+      // pollInterval: pollInterval || 5000
+      variables: {
+        id: editing ? editing.guid : null
+      }
+    };
+  },
+  props: function props(_props) {
+    return {
+      // debug: console.log('this get structure', props),
+      structure: _props.data.getBDAPOC ? Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _props.data.getBDAPOC, {
+        body: JSON.parse(_props.data.getBDAPOC.body)
+      }) : null
+    };
+  }
+});
+var withStructuresList = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["graphql"])(QueryListStructures, {
+  options: function options(_ref2) {
+    var pollInterval = _ref2.pollInterval;
     return {
       fetchPolicy: 'cache-and-network',
       pollInterval: pollInterval || 5000
     };
   },
-  props: function props(_props) {
+  props: function props(_props2) {
     return {
-      debug: console.log('this query', _props),
-      structures: _props.data.listBDAPOCS ? _props.data.listBDAPOCS.items : []
+      // debug: console.log('this query', props),
+      structures: _props2.data.listBDAPOCS ? _props2.data.listBDAPOCS.items : []
     };
   }
 });
 var withCreateStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["graphql"])(MutationCreateStructure, {
   options: {
-    update: function update(proxy, _ref2) {
-      var createBDAPOC = _ref2.data.createBDAPOC;
+    update: function update(proxy, _ref3) {
+      var createBDAPOC = _ref3.data.createBDAPOC;
       var query = QueryListStructures;
       var data = proxy.readQuery({
         query: query
       });
-      data.listBDAPOCS.items = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(data.listBDAPOCS.items.filter(function (struct) {
+      data.listBDAPOCS.items = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(data.listBDAPOCS.items.filter(function (struct) {
         return !createBDAPOC || struct.id !== createBDAPOC.id;
       })).concat([createBDAPOC]);
       console.log('update', {
@@ -7868,21 +8076,21 @@ var withCreateStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["grap
       });
     }
   },
-  props: function props(_ref3) {
-    var ownProps = _ref3.ownProps,
-        mutate = _ref3.mutate;
+  props: function props(_ref4) {
+    var ownProps = _ref4.ownProps,
+        mutate = _ref4.mutate;
     return {
       createStructure: function createStructure(structure) {
         return mutate({
           variables: {
-            input: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, structure, {
+            input: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, structure, {
               lastEdit: Math.round(new Date().getTime() / 1000)
             })
           },
           optimisticResponse: function optimisticResponse() {
             return {
               __typename: 'Mutation',
-              createBDAPOC: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, structure, {
+              createBDAPOC: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, structure, {
                 id: "pending".concat(Object(uuid__WEBPACK_IMPORTED_MODULE_5__["v4"])()),
                 lastEdit: Math.round(new Date().getTime() / 1000),
                 __typename: 'BDAPOC'
@@ -7896,8 +8104,8 @@ var withCreateStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["grap
 });
 var withDeleteStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["graphql"])(MutationDeleteStructure, {
   options: {
-    update: function update(proxy, _ref4) {
-      var deleteBDAPOC = _ref4.data.deleteBDAPOC;
+    update: function update(proxy, _ref5) {
+      var deleteBDAPOC = _ref5.data.deleteBDAPOC;
       var query = QueryListStructures;
       var data = proxy.readQuery({
         query: query
@@ -7911,9 +8119,9 @@ var withDeleteStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["grap
       });
     }
   },
-  props: function props(_ref5) {
-    var ownProps = _ref5.ownProps,
-        mutate = _ref5.mutate;
+  props: function props(_ref6) {
+    var ownProps = _ref6.ownProps,
+        mutate = _ref6.mutate;
     return {
       deleteStructure: function deleteStructure(structure) {
         return mutate({
@@ -7923,7 +8131,7 @@ var withDeleteStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["grap
           optimisticResponse: function optimisticResponse() {
             return {
               __typename: 'Mutation',
-              deleteBDAPOC: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, structure, {
+              deleteBDAPOC: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, structure, {
                 __typename: 'BDAPOC'
               })
             };
@@ -7933,6 +8141,143 @@ var withDeleteStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["grap
     };
   }
 });
+var withUpdateStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["graphql"])(MutationUpdateStructure, {
+  options: {
+    update: function update(proxy, _ref7) {
+      var updateBDAPOC = _ref7.data.updateBDAPOC;
+      var query = QueryListStructures;
+      var data = proxy.readQuery({
+        query: query
+      });
+      data.listBDAPOCS.items = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(data.listBDAPOCS.items.filter(function (struct) {
+        return !updateBDAPOC || struct.id !== updateBDAPOC.id;
+      })).concat([updateBDAPOC]);
+      proxy.writeQuery({
+        query: query,
+        data: data
+      });
+    }
+  },
+  props: function props(_ref8) {
+    var ownProps = _ref8.ownProps,
+        mutate = _ref8.mutate;
+    return {
+      updateStructure: function updateStructure(structure) {
+        return mutate({
+          variables: {
+            input: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, structure, {
+              body: JSON.stringify(structure.body),
+              lastEdit: Math.round(new Date().getTime() / 1000)
+            })
+          },
+          debug: console.log(structure),
+          optimisticResponse: function optimisticResponse() {
+            return {
+              __typename: 'Mutation',
+              updateBDAPOC: Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, structure, {
+                body: JSON.stringify(structure.body),
+                lastEdit: Math.round(new Date().getTime() / 1000),
+                __typename: 'BDAPOC'
+              })
+            };
+          }
+        });
+      }
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./src/graphql/withFieldData.js":
+/*!**************************************!*\
+  !*** ./src/graphql/withFieldData.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+/* harmony import */ var _queries__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./queries */ "./src/graphql/queries.js");
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])( // Here's the query that gives us structure
+_queries__WEBPACK_IMPORTED_MODULE_3__["withGetStructure"], _queries__WEBPACK_IMPORTED_MODULE_3__["withUpdateStructure"], // ONCE we mount the control we should initialize it
+Object(recompose__WEBPACK_IMPORTED_MODULE_2__["withHandlers"])({
+  getValueProps: function getValueProps(_ref) {
+    var structure = _ref.structure,
+        updateStructure = _ref.updateStructure,
+        props = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["structure", "updateStructure"]);
+
+    return function (name) {
+      var newValProps = {
+        value: null,
+        note: null
+      };
+      var newProps = {
+        setValue: function setValue(newVal) {
+          console.log('setValue called', {
+            structure: structure,
+            name: name,
+            newVal: newVal,
+            updateStructure: updateStructure
+          });
+          var oldVal = {};
+
+          try {
+            oldVal = structure.body[name];
+          } catch (e) {}
+
+          var newObj = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, name, Object.assign({}, oldVal, {
+            value: newVal
+          }));
+
+          if (structure && structure.id) {
+            updateStructure({
+              id: structure.id,
+              body: Object.assign({}, structure.body, newObj)
+            });
+          }
+        },
+        setNote: function setNote(newNote) {
+          console.log('setNote called', {
+            structure: structure,
+            name: name,
+            newNote: newNote,
+            updateStructure: updateStructure
+          });
+          var oldValues = {};
+
+          try {
+            oldValues = structure.body[name];
+          } catch (e) {}
+
+          var newObj = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, name, Object.assign({}, oldValues, {
+            note: newNote
+          }));
+
+          if (structure && structure.id) {
+            updateStructure({
+              id: structure.id,
+              body: Object.assign({}, structure.body, newObj)
+            });
+          }
+        }
+      };
+
+      try {
+        newValProps = structure.body[name];
+      } catch (e) {}
+
+      return Object.assign({}, newValProps, newProps);
+    };
+  }
+})));
 
 /***/ }),
 
@@ -8250,87 +8595,21 @@ var randomArrayEl = function randomArrayEl(arr) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionConsts", function() { return actionConsts; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actions", function() { return actions; });
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
-/* harmony import */ var uuid_v1__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! uuid/v1 */ "./node_modules/uuid/v1.js");
-/* harmony import */ var uuid_v1__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(uuid_v1__WEBPACK_IMPORTED_MODULE_4__);
-
-
-
-
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 
 var actionConsts = {
-  INIT_FIELD: 'INIT_FIELD',
-  CHANGE_FIELD_VALUE: 'CHANGE_FIELD_VALUE',
-  CREATE_STRUCTURE: 'CREATE_STRUCTURE',
   EDIT_STRUCTURE: 'EDIT_STRUCTURE',
   VIEW_STRUCTURE: 'VIEW_STRUCTURE',
-  BACK_TO_HOME: 'BACK_TO_HOME',
-  DELETE_STRUCTURE: 'DELETE_STRUCTURE',
-  UPLOAD_STRUCTURE: 'UPLOAD_FORM'
+  BACK_TO_HOME: 'BACK_TO_HOME'
   /**
-   * Return a random chance of something happening happening
-   * @param {*} prob (in percent: 0-100)
+   * Actions are actually just really simple objects
    */
 
 };
-
-var randomFail = function randomFail(prob) {
-  var rand = Math.random();
-  return rand > parseFloat(prob) / 100;
-};
-
-var getRandomArbitrary = function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
-};
-/**
- * Actions are actually just really simple objects
- */
-
-
 var actions = {
-  initializeField: function initializeField(guid, fieldName, fieldSection) {
-    return {
-      type: actionConsts.INIT_FIELD,
-      guid: guid,
-      fieldName: fieldName,
-      fieldSection: fieldSection
-    };
-  },
-  changeFieldValue: function changeFieldValue(guid, fieldName, fieldValue, fieldNote) {
-    return {
-      type: actionConsts.CHANGE_FIELD_VALUE,
-      guid: guid,
-      fieldName: fieldName,
-      fieldValue: fieldValue,
-      fieldNote: fieldNote
-    };
-  },
   backToHome: function backToHome() {
     return {
       type: actionConsts.BACK_TO_HOME
-    };
-  },
-  createStructure: function createStructure() {
-    var guid = uuid_v1__WEBPACK_IMPORTED_MODULE_4___default()();
-    return function (dispatch) {
-      dispatch({
-        type: actionConsts.CREATE_STRUCTURE,
-        guid: guid
-      });
-      dispatch({
-        type: actionConsts.EDIT_STRUCTURE,
-        guid: guid
-      });
-    };
-  },
-  deleteStructure: function deleteStructure(guid) {
-    return {
-      type: actionConsts.DELETE_STRUCTURE,
-      guid: guid
     };
   },
   editStructure: function editStructure(guid) {
@@ -8344,131 +8623,10 @@ var actions = {
       type: actionConsts.VIEW_STRUCTURE,
       guid: guid
     };
-  },
-  uploadStructure: function uploadStructure(guid) {
-    var type = actionConsts.UPLOAD_STRUCTURE;
-    return function (dispatch) {
-      dispatch({
-        type: type,
-        guid: guid,
-        uploading: true,
-        uploaded: false,
-        uploadFailed: false
-      });
-      setTimeout(function () {
-        // Randomly fail and ask for retry
-        if (randomFail(20)) dispatch({
-          type: type,
-          guid: guid,
-          uploading: false,
-          uploaded: true,
-          uploadFailed: false
-        });else dispatch({
-          type: type,
-          guid: guid,
-          uploading: false,
-          uploaded: false,
-          uploadFailed: true
-        });
-      }, getRandomArbitrary(1000, 4000)); // between 3 and 10 seconds simulates a bad network connection
-    };
-  } // Template for new structure form object
-
-};
-var structureTemplate = {
-  uploaded: false,
-  uploading: false,
-  uploadFailed: false,
-  fields: {// fieldname: {
-    //   value: null,
-    //   section: null
-    // }
   }
 };
 var defaultState = {
-  // editing: '3b99e3e0-7598-11e8-90be-95472fb3ecbd',
-  // structures: {
-  //   '3b99e3e0-7598-11e8-90be-95472fb3ecbd': {
-  //     uploaded: false,
-  //     uploading: false,
-  //     uploadFailed: false,
-  //     fields: [
-  //       {
-  //         value: 'SOMETHING',
-  //         section: 1
-  //       }
-  //     ]
-  //   }
-  // }
-  editing: null,
-  structures: {}
-  /**
-   * Our reducers are super simple too
-   * @param {*} state
-   * @param {*} action
-   */
-
-};
-
-var structures = function structures() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : defaultState.structures;
-  var action = arguments.length > 1 ? arguments[1] : undefined;
-  var guid = action.guid,
-      uploading = action.uploading,
-      uploaded = action.uploaded,
-      uploadFailed = action.uploadFailed,
-      fieldName = action.fieldName,
-      fieldValue = action.fieldValue,
-      fieldSection = action.fieldSection,
-      fieldNote = action.fieldNote;
-  var newState;
-
-  switch (action.type) {
-    case actionConsts.CREATE_STRUCTURE:
-      // Add a new object and set what we're currently editing
-      return Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, state, Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, guid, structureTemplate));
-
-    case actionConsts.INIT_FIELD:
-      newState = lodash__WEBPACK_IMPORTED_MODULE_2___default.a.cloneDeep(state); // console.log('HERE I AM', { action, state })
-
-      var currField = newState[guid].fields[fieldName] || {
-        value: null
-      };
-      newState[guid].fields[fieldName] = {
-        value: currField.value,
-        section: fieldSection,
-        note: currField.note
-      };
-      return newState;
-
-    case actionConsts.CHANGE_FIELD_VALUE:
-      var oldVal = state[guid].fields[fieldName];
-      newState = lodash__WEBPACK_IMPORTED_MODULE_2___default.a.cloneDeep(state);
-      var newVal = fieldValue || oldVal.value;
-      var newNote = fieldNote || oldVal.note;
-      newState[guid].fields[fieldName] = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, oldVal, {
-        value: newVal,
-        note: newNote
-      });
-      return newState;
-
-    case actionConsts.DELETE_STRUCTURE:
-      newState = lodash__WEBPACK_IMPORTED_MODULE_2___default.a.cloneDeep(state);
-      delete newState[guid];
-      return newState;
-
-    case actionConsts.UPLOAD_STRUCTURE:
-      newState = lodash__WEBPACK_IMPORTED_MODULE_2___default.a.cloneDeep(state);
-      newState[guid] = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, newState[guid], {
-        uploading: uploading,
-        uploaded: uploaded,
-        uploadFailed: uploadFailed
-      });
-      return newState;
-
-    default:
-      return state;
-  }
+  editing: null
 };
 
 var editing = function editing() {
@@ -8496,8 +8654,7 @@ var editing = function editing() {
   }
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_3__["combineReducers"])({
-  structures: structures,
+/* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
   editing: editing
 }));
 
@@ -8507,12 +8664,12 @@ var editing = function editing() {
 /*!********************************!*\
   !*** ./src/redux/withRedux.js ***!
   \********************************/
-/*! exports provided: withReduxField, withReduxHome */
+/*! exports provided: withFormState, withReduxHome */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withReduxField", function() { return withReduxField; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withFormState", function() { return withFormState; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withReduxHome", function() { return withReduxHome; });
 /* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
 /* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
@@ -8545,52 +8702,17 @@ var mapStateToFieldProps = function mapStateToFieldProps(state, props) {
   };
 };
 
-var withReduxField = Object(recompose__WEBPACK_IMPORTED_MODULE_1__["compose"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToFieldProps), // Once connect() is composed `dispatch` is prop.
-// ONCE we mount the control we should initialize it
-Object(recompose__WEBPACK_IMPORTED_MODULE_1__["lifecycle"])({
-  componentDidMount: function componentDidMount() {
-    var _this$props = this.props,
-        dispatch = _this$props.dispatch,
-        formGuid = _this$props.formGuid,
-        section = _this$props.section,
-        name = _this$props.name,
-        present = _this$props.present;
-
-    if (!present) {
-      console.log('componentDidMount', formGuid, section, name);
-      dispatch(_reducers__WEBPACK_IMPORTED_MODULE_2__["actions"].initializeField(formGuid, name, section));
-    }
-  }
-}), Object(recompose__WEBPACK_IMPORTED_MODULE_1__["withHandlers"])({
-  setValue: function setValue(_ref) {
-    var dispatch = _ref.dispatch,
-        formGuid = _ref.formGuid,
-        name = _ref.name;
-    return function (newVal) {
-      console.log('setValue called', formGuid, name, newVal);
-      dispatch(_reducers__WEBPACK_IMPORTED_MODULE_2__["actions"].changeFieldValue(formGuid, name, newVal));
-    };
-  },
-  setNote: function setNote(_ref2) {
-    var dispatch = _ref2.dispatch,
-        formGuid = _ref2.formGuid,
-        name = _ref2.name;
-    return function (newNote) {
-      console.log('setNote called', formGuid, name, newNote);
-      dispatch(_reducers__WEBPACK_IMPORTED_MODULE_2__["actions"].changeFieldValue(formGuid, name, null, newNote));
-    };
-  }
-}), // Make sure dispatch and formGuid never make it to the individual components
-Object(recompose__WEBPACK_IMPORTED_MODULE_1__["mapProps"])(function (_ref3) {
-  var dispatch = _ref3.dispatch,
-      formGuid = _ref3.formGuid,
-      otherProps = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref3, ["dispatch", "formGuid"]);
+var withFormState = Object(recompose__WEBPACK_IMPORTED_MODULE_1__["compose"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToFieldProps), // Once connect() is composed `dispatch` is prop.
+// Make sure dispatch and formGuid never make it to the individual components
+Object(recompose__WEBPACK_IMPORTED_MODULE_1__["mapProps"])(function (_ref) {
+  var formGuid = _ref.formGuid,
+      otherProps = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref, ["formGuid"]);
 
   return otherProps;
 }));
 
-var mapStateToHomeProps = function mapStateToHomeProps(_ref4, props) {
-  var editing = _ref4.editing;
+var mapStateToHomeProps = function mapStateToHomeProps(_ref2, props) {
+  var editing = _ref2.editing;
   return {
     editing: editing
   };
@@ -8602,17 +8724,24 @@ var mapStateToHomeProps = function mapStateToHomeProps(_ref4, props) {
 
 var withReduxHome = Object(recompose__WEBPACK_IMPORTED_MODULE_1__["compose"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToHomeProps), // Once connect() is composed `dispatch` is prop.
 Object(recompose__WEBPACK_IMPORTED_MODULE_1__["withHandlers"])({
-  backToHome: function backToHome(_ref5) {
-    var dispatch = _ref5.dispatch;
-    return function (guid) {
-      console.log('backToHome called', guid);
-      dispatch(_reducers__WEBPACK_IMPORTED_MODULE_2__["actions"].backToHome(guid));
+  backToHome: function backToHome(_ref3) {
+    var dispatch = _ref3.dispatch;
+    return function () {
+      // console.log('backToHome called')
+      dispatch(_reducers__WEBPACK_IMPORTED_MODULE_2__["actions"].backToHome());
     };
   },
-  viewStructure: function viewStructure(_ref6) {
-    var dispatch = _ref6.dispatch;
+  editStructure: function editStructure(_ref4) {
+    var dispatch = _ref4.dispatch;
     return function (guid) {
-      console.log('viewStructure called', guid);
+      console.log('editStructure called', guid);
+      dispatch(_reducers__WEBPACK_IMPORTED_MODULE_2__["actions"].editStructure(guid));
+    };
+  },
+  viewStructure: function viewStructure(_ref5) {
+    var dispatch = _ref5.dispatch;
+    return function (guid) {
+      // console.log('viewStructure called', guid)
       dispatch(_reducers__WEBPACK_IMPORTED_MODULE_2__["actions"].viewStructure(guid));
     };
   }
