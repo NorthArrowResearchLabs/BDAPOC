@@ -1,16 +1,16 @@
 {
   "main.css": "/BDAPOC/static/css/main.5e0d8f07.chunk.css",
-  "main.js": "/BDAPOC/static/js/main.0abd4d3f.chunk.js",
-  "main.js.map": "/BDAPOC/static/js/main.0abd4d3f.chunk.js.map",
+  "main.js": "/BDAPOC/static/js/main.a3a6885e.chunk.js",
+  "main.js.map": "/BDAPOC/static/js/main.a3a6885e.chunk.js.map",
   "static/css/1.1133e8a8.chunk.css": "/BDAPOC/static/css/1.1133e8a8.chunk.css",
   "static/js/1.23bf4839.chunk.js": "/BDAPOC/static/js/1.23bf4839.chunk.js",
   "static/js/1.23bf4839.chunk.js.map": "/BDAPOC/static/js/1.23bf4839.chunk.js.map",
   "runtime~main.js": "/BDAPOC/static/js/runtime~main.23e79784.js",
   "runtime~main.js.map": "/BDAPOC/static/js/runtime~main.23e79784.js.map",
-  "static/media/semantic.css": "/BDAPOC/static/media/icons.962a1bf3.svg",
-  "static/css/1.1133e8a8.chunk.css.map": "/BDAPOC/static/css/1.1133e8a8.chunk.css.map",
+  "static/media/semantic.css": "/BDAPOC/static/media/outline-icons.ef60a4f6.woff",
   "static/css/main.5e0d8f07.chunk.css.map": "/BDAPOC/static/css/main.5e0d8f07.chunk.css.map",
+  "static/css/1.1133e8a8.chunk.css.map": "/BDAPOC/static/css/1.1133e8a8.chunk.css.map",
   "index.html": "/BDAPOC/index.html",
-  "precache-manifest.b7f0d6267f121a3b597779232016ddc3.js": "/BDAPOC/precache-manifest.b7f0d6267f121a3b597779232016ddc3.js",
+  "precache-manifest.4d5d9ca4c9a8e58a15f52f914c17f0c7.js": "/BDAPOC/precache-manifest.4d5d9ca4c9a8e58a15f52f914c17f0c7.js",
   "service-worker.js": "/BDAPOC/service-worker.js"
 }
