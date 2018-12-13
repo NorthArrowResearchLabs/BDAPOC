@@ -159,7 +159,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "#root, .awsappsync, .awsappsync>div {\n  height: 100%;\n  width: 100%;\n}\n\n.appContainer{\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\n.appContainer>.menu{\n  flex: 0 0;\n}\n\n.appContainer>.tabContainer{\n  flex: 1 1;\n  display: flex;\n  flex-direction: column;\n}\n.appContainer>.tabContainer>.menu{\n  flex: 0 0 70px;\n}\n.appContainer>.tabContainer>.ui.segment{\n  flex: 1 1;\n  overflow: hidden;\n  padding: 0;\n}\n.appContainer>.tabContainer>.ui.segment>.structureList{\n  overflow: scroll;\n  overflow-y: scroll;\n  overflow-x: hidden;\n  -webkit-overflow-scrolling: touch;\n  height: 100%;\n}\n\n.homeIcons {\n  position: absolute;\n  bottom: 1rem;\n  right: 1rem;\n}\n\n.homepageListItem{\n  position: relative;\n}\n\n.presentForm {\n  margin-top: 0;\n  overflow: scroll;\n  overflow-y: scroll;\n  overflow-x: hidden;\n  -webkit-overflow-scrolling: touch;\n}\n\n.formPusher {\n  margin-top: 40px;\n  margin-bottom: 80px;\n  overflow-y: scroll;\n  overflow-x: hidden;\n  -webkit-overflow-scrolling: touch;\n}\n\n.presentForm .section .ui.header {\n  border-bottom: 2px solid #AAAAAA;\n}\n.presentForm .item .content .header{\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #DDDDDD;\n}\n\n.presentForm .item .content .description{\n  margin-bottom: 1rem;\n}\n\n.ui.addButton.button {\n  position: absolute;\n  bottom: 2rem;\n  right: 2rem;\n  font-size: 2.0rem;\n  box-shadow: 1px 1px 5px rgba(0,0,0, 0.5)!important;\n}\n\n/**\nTighten up the form layout\n**/\n.ui.segment.BDAFormField {\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n}\n.BDAFormField .ui.header{\n  -webkit-font-feature-settings: \"c2sc\";\n          font-feature-settings: \"c2sc\";\n  font-variant: small-caps;  \n}", ""]);
+exports.push([module.i, "#root, .awsappsync, .awsappsync>div {\n  height: 100%;\n  width: 100%;\n}\n\n.appContainer{\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n}\n\n.appContainer>.menu{\n  flex: 0 0;\n}\n\n.appContainer>.tabContainer{\n  flex: 1 1;\n  display: flex;\n  flex-direction: column;\n}\n.appContainer>.tabContainer>.menu{\n  flex: 0 0 70px;\n}\n.appContainer>.tabContainer>.ui.segment{\n  flex: 1 1;\n  overflow: hidden;\n  padding: 0;\n}\n.appContainer>.tabContainer>.ui.segment>.structureList{\n  overflow: scroll;\n  overflow-y: scroll;\n  overflow-x: hidden;\n  -webkit-overflow-scrolling: touch;\n  height: 100%;\n}\n\n.homeIcons {\n  position: absolute;\n  bottom: 1rem;\n  right: 1rem;\n}\n\n.homepageListItem{\n  position: relative;\n}\n\n.presentForm {\n  margin-top: 0;\n  overflow: scroll;\n  overflow-y: scroll;\n  overflow-x: hidden;\n  -webkit-overflow-scrolling: touch;\n}\n\n.formPusher {\n  margin-top: 40px;\n  margin-bottom: 80px;\n  overflow-y: scroll;\n  overflow-x: hidden;\n  -webkit-overflow-scrolling: touch;\n}\n\n.presentForm .section .ui.header {\n  border-bottom: 2px solid #AAAAAA;\n}\n.presentForm .item .content .header{\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #DDDDDD;\n}\n\n.presentForm .item .content .description{\n  margin-bottom: 1rem;\n}\n\n.ui.addButton.button {\n  position: absolute;\n  bottom: 2rem;\n  right: 2rem;\n  font-size: 2.0rem;\n  box-shadow: 1px 1px 5px rgba(0,0,0, 0.5)!important;\n}\n\n/**\nTighten up the form layout\n**/\n.ui.segment.BDAFormField {\n  padding-left: 0;\n  padding-right: 0;\n  padding-bottom: 0;\n}\n.BDAFormField .ui.header{\n  -webkit-font-feature-settings: \"c2sc\";\n          font-feature-settings: \"c2sc\";\n  font-variant: small-caps;  \n}\n\n#Version {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  font-size: 1rem;\n  color: #AAAAAA;\n}", ""]);
 
 // exports
 
@@ -1683,19 +1683,19 @@ function printValues(value, options) {
 Object(recompose__WEBPACK_IMPORTED_MODULE_3__["withStateHandlers"])(function (_ref5) {
   var value = _ref5.value;
   return {
-    value: value
+    controlledValues: value
   };
 }, {
   setValue: function setValue(_ref6, _ref7) {
-    var value = _ref6.value;
+    var controlledValues = _ref6.controlledValues;
     var _setValue = _ref7.setValue;
     return function (newVal) {
       var newValues = [];
-      if (Array.isArray(value)) newValues = value.slice(0);
+      if (Array.isArray(controlledValues)) newValues = controlledValues.slice(0);
       if (newValues.indexOf(newVal) < 0) newValues.push(newVal);else newValues = newValues.splice(newValues.indexOf(newVal), 1);
       if (_setValue) _setValue(newValues);
       return {
-        value: newValues
+        controlledValues: newValues
       };
     };
   }
@@ -2270,25 +2270,23 @@ Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withHandlers"])({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectSpread.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react_map_gl__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-map-gl */ "./node_modules/react-map-gl/dist/esm/index.js");
-/* harmony import */ var react_virtualized__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-virtualized */ "./node_modules/react-virtualized/dist/es/index.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_map_gl__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-map-gl */ "./node_modules/react-map-gl/dist/esm/index.js");
+/* harmony import */ var react_virtualized__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-virtualized */ "./node_modules/react-virtualized/dist/es/index.js");
+/* harmony import */ var _common_maps_styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../common/maps/styles */ "./src/components/common/maps/styles/index.js");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _LocationPicker_style_json__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./LocationPicker.style.json */ "./src/components/BDAMobile/questions/LocationPicker.style.json");
-var _LocationPicker_style_json__WEBPACK_IMPORTED_MODULE_13___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./LocationPicker.style.json */ "./src/components/BDAMobile/questions/LocationPicker.style.json", 1);
-/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! mapbox-gl/dist/mapbox-gl.css */ "./node_modules/mapbox-gl/dist/mapbox-gl.css");
-/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! mapbox-gl/dist/mapbox-gl.css */ "./node_modules/mapbox-gl/dist/mapbox-gl.css");
+/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_13__);
 
 
 
@@ -2301,7 +2299,7 @@ var _LocationPicker_style_json__WEBPACK_IMPORTED_MODULE_13___namespace = /*#__PU
 
 
 
-
+ // import mapStyle from './LocationPicker.style.json'
 
 
 
@@ -2313,53 +2311,52 @@ var LocationPicker = function LocationPicker(_ref) {
       viewport = _ref.viewport,
       mapboxApiAccessToken = _ref.mapboxApiAccessToken,
       onViewportChange = _ref.onViewportChange;
-  var icon = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Icon"], {
+  var icon = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Icon"], {
     name: "circle notched",
     loading: true
   });
-  if (!loading) icon = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Icon"], {
+  if (!loading) icon = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Icon"], {
     name: error ? 'check times' : 'check circle'
   }); // console.log('RENDER', viewport)
 
-  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Segment"], {
+  return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Segment"], {
     className: "BDAFormField"
-  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Header"], {
+  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Header"], {
     as: "h3"
-  }, title), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
+  }, title), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Grid"], {
     columns: 2
-  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Grid"].Row, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Grid"].Column, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Input"], {
+  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Grid"].Row, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Grid"].Column, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Input"], {
     fluid: true,
     label: "Lat:",
     placeholder: "49.29949",
     value: viewport.latitude
-  })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Grid"].Column, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Input"], {
+  })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Grid"].Column, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Input"], {
     fluid: true,
     label: "Lng:",
     placeholder: "-123.34234",
     value: viewport.longitude
-  })))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+  })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
     style: {
       height: 400
     }
-  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Dimmer"], {
+  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Dimmer"], {
     active: loading
-  }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Loader"], null)), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_virtualized__WEBPACK_IMPORTED_MODULE_10__["AutoSizer"], null, function (_ref2) {
+  }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Loader"], null)), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_virtualized__WEBPACK_IMPORTED_MODULE_9__["AutoSizer"], null, function (_ref2) {
     var height = _ref2.height,
         width = _ref2.width;
-    return loading ? null : react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_9__["default"], Object.assign({
+    return loading ? null : react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_8__["default"], Object.assign({}, viewport, {
       height: height,
       width: width,
-      mapStyle: _LocationPicker_style_json__WEBPACK_IMPORTED_MODULE_13__
-    }, viewport, {
+      mapStyle: _common_maps_styles__WEBPACK_IMPORTED_MODULE_10__["default"][1].style,
       onViewportChange: onViewportChange,
       mapboxApiAccessToken: mapboxApiAccessToken
-    }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_9__["Marker"], {
+    }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_8__["Marker"], {
       key: "marker-1",
       longitude: viewport.longitude,
       latitude: viewport.latitude,
       offsetLeft: -20,
       offsetTop: -10
-    }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Icon"], {
+    }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Icon"], {
       style: {
         color: '#FFFFFF',
         textShadow: '0px 0px 2px #000000'
@@ -2367,11 +2364,11 @@ var LocationPicker = function LocationPicker(_ref) {
       name: "map marker alternate",
       size: "huge"
     })));
-  })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Message"], {
+  })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Message"], {
     positive: !loading && !error,
     negative: error,
     icon: true
-  }, icon, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Message"].Content, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", null, error || message))));
+  }, icon, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Message"].Content, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, error || message))));
 };
 
 LocationPicker.defaultProps = {
@@ -2384,20 +2381,20 @@ var withGeolocation = function withGeolocation(WrappedComponent) {
   return (
     /*#__PURE__*/
     function (_React$Component) {
-      Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Geolocation, _React$Component);
+      Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Geolocation, _React$Component);
 
       function Geolocation() {
         var _getPrototypeOf2;
 
         var _this;
 
-        Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Geolocation);
+        Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Geolocation);
 
         for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
           args[_key] = arguments[_key];
         }
 
-        _this = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__["default"])(this, (_getPrototypeOf2 = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(Geolocation)).call.apply(_getPrototypeOf2, [this].concat(args)));
+        _this = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, (_getPrototypeOf2 = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Geolocation)).call.apply(_getPrototypeOf2, [this].concat(args)));
         _this.state = {
           loading: true,
           message: 'Retrieving location data...'
@@ -2405,16 +2402,16 @@ var withGeolocation = function withGeolocation(WrappedComponent) {
         return _this;
       }
 
-      Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(Geolocation, [{
+      Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Geolocation, [{
         key: "componentWillMount",
         value: function () {
-          var _componentWillMount = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
+          var _componentWillMount = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
           /*#__PURE__*/
-          _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {
+          _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
             var _this2 = this;
 
             var geolocation, location;
-            return _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
+            return _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
               while (1) {
                 switch (_context.prev = _context.next) {
                   case 0:
@@ -2475,54 +2472,46 @@ var withGeolocation = function withGeolocation(WrappedComponent) {
       }, {
         key: "render",
         value: function render() {
-          return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(WrappedComponent, Object.assign({}, this.props, this.state));
+          return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(WrappedComponent, Object.assign({}, this.props, this.state));
         }
       }]);
 
       return Geolocation;
-    }(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component)
+    }(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component)
   );
 };
 
 var Present = function Present(_ref4) {
   var title = _ref4.title,
       value = _ref4.value;
-  return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"], null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"].Content, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"].Header, {
+  return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"].Content, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"].Header, {
     as: "h4"
-  }, title || 'Geolocation'), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"].Description, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("pre", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("code", null, JSON.stringify(value, null, 2))))));
+  }, title || 'Geolocation'), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_11__["Item"].Description, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("pre", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("code", null, JSON.stringify(value, null, 2))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_12__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_12__["withHandlers"])({
-  onViewportChange: function onViewportChange(_ref5) {
-    var value = _ref5.value,
-        setValue = _ref5.setValue;
-    return function (newVal) {
-      setValue(newVal);
-    };
-  }
-}), Object(recompose__WEBPACK_IMPORTED_MODULE_12__["mapProps"])(function (props) {
-  return Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    viewport: props.value || {
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_12__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_12__["branch"])(function (_ref5) {
+  var present = _ref5.present;
+  return !!present;
+}, Object(recompose__WEBPACK_IMPORTED_MODULE_12__["renderComponent"])(Present)), Object(recompose__WEBPACK_IMPORTED_MODULE_12__["withStateHandlers"])(function (_ref6) {
+  var value = _ref6.value;
+  return {
+    viewport: value || {
       latitude: 49.29949,
       longitude: -123.1528795,
       zoom: 17
     }
-  });
-}), Object(recompose__WEBPACK_IMPORTED_MODULE_12__["branch"])(function (_ref6) {
-  var present = _ref6.present;
-  return !!present;
-}, Object(recompose__WEBPACK_IMPORTED_MODULE_12__["renderComponent"])(Present)), withGeolocation)(LocationPicker));
-
-/***/ }),
-
-/***/ "./src/components/BDAMobile/questions/LocationPicker.style.json":
-/*!**********************************************************************!*\
-  !*** ./src/components/BDAMobile/questions/LocationPicker.style.json ***!
-  \**********************************************************************/
-/*! exports provided: version, name, metadata, center, zoom, bearing, pitch, sources, sprite, glyphs, layers, default */
-/***/ (function(module) {
-
-module.exports = {"version":8,"name":"Satellite","metadata":{"mapbox:autocomposite":true,"mapbox:type":"default"},"center":[-118.4106,33.750013],"zoom":13,"bearing":0,"pitch":0,"sources":{"mapbox":{"url":"mapbox://mapbox.satellite","type":"raster","tileSize":256}},"sprite":"mapbox://sprites/raychaser/cjdujpc125asd2snqe3zpayef","glyphs":"mapbox://fonts/raychaser/{fontstack}/{range}.pbf","layers":[{"id":"background","type":"background","paint":{"background-color":"rgb(4,7,14)"}},{"id":"satellite","type":"raster","source":"mapbox","source-layer":"mapbox_satellite_full","paint":{"raster-opacity":1}}]};
+  };
+}, {
+  onViewportChange: function onViewportChange(state, _ref7) {
+    var setValue = _ref7.setValue;
+    return function (newVal) {
+      setValue(newVal);
+      return {
+        viewport: newVal
+      };
+    };
+  }
+}), withGeolocation)(LocationPicker));
 
 /***/ }),
 
@@ -3134,6 +3123,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "./node_modules/semantic-ui-react/dist/es/index.js");
 /* harmony import */ var _Note__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Note */ "./src/components/BDAMobile/questions/Note.jsx");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+
 
 
 
@@ -3164,7 +3155,22 @@ var Photos = function Photos(_ref) {
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Photos);
+var Present = function Present(_ref2) {
+  var label = _ref2.label,
+      value = _ref2.value;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Item"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Item"].Content, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Item"].Header, {
+    as: "h4"
+  }, label), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Item"].Description, null, value || react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    style: {
+      color: 'red'
+    }
+  }, "Not Entered"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_3__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_3__["branch"])(function (_ref3) {
+  var present = _ref3.present;
+  return !!present;
+}, Object(recompose__WEBPACK_IMPORTED_MODULE_3__["renderComponent"])(Present)))(Photos));
 
 /***/ }),
 
@@ -3191,7 +3197,7 @@ var RadioQuestion = function RadioQuestion(_ref) {
   var title = _ref.title,
       name = _ref.name,
       options = _ref.options,
-      value = _ref.value,
+      controlledValue = _ref.controlledValue,
       hasNote = _ref.hasNote,
       note = _ref.note,
       notePrompt = _ref.notePrompt,
@@ -3211,7 +3217,7 @@ var RadioQuestion = function RadioQuestion(_ref) {
       label: label,
       name: name,
       value: rVal,
-      checked: value && rVal === value,
+      checked: controlledValue !== null && rVal === controlledValue,
       onChange: function onChange() {
         return setValue(rVal);
       }
@@ -3255,16 +3261,15 @@ var Present = function Present(_ref3) {
 function (_ref5) {
   var value = _ref5.value;
   return {
-    value: value
+    controlledValue: value
   };
 }, {
-  setValue: function setValue(_ref6, _ref7) {
-    var value = _ref6.value;
-    var _setValue = _ref7.setValue;
+  setValue: function setValue(state, _ref6) {
+    var _setValue = _ref6.setValue;
     return function (newValue) {
       if (_setValue) _setValue(newValue);
       return {
-        value: newValue
+        controlledValue: newValue
       };
     };
   }
@@ -3293,7 +3298,7 @@ var TextField = function TextField(_ref) {
   var label = _ref.label,
       placeholder = _ref.placeholder,
       type = _ref.type,
-      value = _ref.value,
+      controlledValue = _ref.controlledValue,
       setValue = _ref.setValue;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Segment"], {
     basic: true,
@@ -3302,7 +3307,7 @@ var TextField = function TextField(_ref) {
     as: "h3"
   }, label), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Form"].Field, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Input"], {
     type: type,
-    defaultValue: value,
+    value: controlledValue,
     placeholder: placeholder,
     onChange: function onChange(e, _ref2) {
       var newval = _ref2.value;
@@ -3331,7 +3336,23 @@ var Present = function Present(_ref3) {
 /* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref4) {
   var present = _ref4.present;
   return !!present;
-}, Object(recompose__WEBPACK_IMPORTED_MODULE_2__["renderComponent"])(Present)))(TextField));
+}, Object(recompose__WEBPACK_IMPORTED_MODULE_2__["renderComponent"])(Present)), Object(recompose__WEBPACK_IMPORTED_MODULE_2__["withStateHandlers"])(function (_ref5) {
+  var value = _ref5.value;
+  return {
+    controlledValue: value
+  };
+}, {
+  setValue: function setValue(state, _ref6) {
+    var _setValue = _ref6.setValue;
+    return function (newVal) {
+      _setValue(newVal);
+
+      return {
+        controlledValue: newVal
+      };
+    };
+  }
+}))(TextField));
 
 /***/ }),
 
@@ -3687,6 +3708,7 @@ var Section = function Section(_ref) {
         props = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref2, ["component", "name"]);
 
     return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FieldComponent, Object.assign({
+      name: name,
       key: "field-".concat(currStep, "-").concat(idx)
     }, props, getValueProps(name)));
   })));
@@ -4878,7 +4900,9 @@ var Homepage = function Homepage(_ref) {
         })));
       }
     }]
-  }));
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    id: "Version"
+  }, "v0.0.25"));
 };
 
 var TheBDAForm = function TheBDAForm(props) {
@@ -5143,7 +5167,7 @@ var TheFormComplex = function TheFormComplex(_ref) {
   })))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withFormState"], _graphql_withFieldData__WEBPACK_IMPORTED_MODULE_6__["default"], recompose__WEBPACK_IMPORTED_MODULE_4__["pure"], Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withState"])('activeStep', 'setActiveStep', 0), Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withState"])('sidebarVisible', 'setSidebarVisible', false), Object(recompose__WEBPACK_IMPORTED_MODULE_4__["mapProps"])(function (initProps) {
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])(_redux_withRedux__WEBPACK_IMPORTED_MODULE_5__["withFormState"], _graphql_withFieldData__WEBPACK_IMPORTED_MODULE_6__["default"], Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withState"])('activeStep', 'setActiveStep', 0), Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withState"])('sidebarVisible', 'setSidebarVisible', false), Object(recompose__WEBPACK_IMPORTED_MODULE_4__["mapProps"])(function (initProps) {
   var confirmStep = {
     title: 'Confirmation',
     description: 'Make sure everything is right',
@@ -8196,21 +8220,36 @@ var withUpdateStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["grap
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _queries__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./queries */ "./src/graphql/queries.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+/* harmony import */ var _queries__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./queries */ "./src/graphql/queries.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])( // Here's the query that gives us structure
-_queries__WEBPACK_IMPORTED_MODULE_3__["withGetStructure"], _queries__WEBPACK_IMPORTED_MODULE_3__["withUpdateStructure"], // ONCE we mount the control we should initialize it
-Object(recompose__WEBPACK_IMPORTED_MODULE_2__["withHandlers"])({
+
+
+ // Utilizing closures to debounce functions from props.
+// If debounce is applied within the component, the "debounced function"
+// will change each time. By defining it statically here, react will always
+// consider this to be the same function.
+
+var debounceCall = Object(lodash__WEBPACK_IMPORTED_MODULE_6__["debounce"])(function (func) {
+  return func();
+}, 1000);
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])( // Here's the query that gives us structure
+_queries__WEBPACK_IMPORTED_MODULE_5__["withGetStructure"], _queries__WEBPACK_IMPORTED_MODULE_5__["withUpdateStructure"], // ONCE we mount the control we should initialize it
+Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withHandlers"])({
   getValueProps: function getValueProps(_ref) {
     var structure = _ref.structure,
         updateStructure = _ref.updateStructure,
-        props = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["structure", "updateStructure"]);
+        props = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3__["default"])(_ref, ["structure", "updateStructure"]);
 
     return function (name) {
       var newValProps = {
@@ -8231,15 +8270,35 @@ Object(recompose__WEBPACK_IMPORTED_MODULE_2__["withHandlers"])({
             oldVal = structure.body[name];
           } catch (e) {}
 
-          var newObj = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, name, Object.assign({}, oldVal, {
+          var newObj = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, name, Object.assign({}, oldVal, {
             value: newVal
           }));
 
           if (structure && structure.id) {
-            updateStructure({
-              id: structure.id,
-              body: Object.assign({}, structure.body, newObj)
-            });
+            // Debouncing is critical so that we don't get a network call for every keystroke
+            debounceCall(
+            /*#__PURE__*/
+            Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+            /*#__PURE__*/
+            _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+              return _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+                while (1) {
+                  switch (_context.prev = _context.next) {
+                    case 0:
+                      console.log('ACTUAL CALL');
+                      _context.next = 3;
+                      return updateStructure({
+                        id: structure.id,
+                        body: Object.assign({}, structure.body, newObj)
+                      });
+
+                    case 3:
+                    case "end":
+                      return _context.stop();
+                  }
+                }
+              }, _callee, this);
+            })));
           }
         },
         setNote: function setNote(newNote) {
@@ -8255,15 +8314,35 @@ Object(recompose__WEBPACK_IMPORTED_MODULE_2__["withHandlers"])({
             oldValues = structure.body[name];
           } catch (e) {}
 
-          var newObj = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, name, Object.assign({}, oldValues, {
+          var newObj = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, name, Object.assign({}, oldValues, {
             note: newNote
           }));
 
           if (structure && structure.id) {
-            updateStructure({
-              id: structure.id,
-              body: Object.assign({}, structure.body, newObj)
-            });
+            // Debouncing is critical so that we don't get a network call for every keystroke
+            debounceCall(
+            /*#__PURE__*/
+            Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+            /*#__PURE__*/
+            _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+              return _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+                while (1) {
+                  switch (_context2.prev = _context2.next) {
+                    case 0:
+                      console.log('ACTUAL CALL');
+                      _context2.next = 3;
+                      return updateStructure({
+                        id: structure.id,
+                        body: Object.assign({}, structure.body, newObj)
+                      });
+
+                    case 3:
+                    case "end":
+                      return _context2.stop();
+                  }
+                }
+              }, _callee2, this);
+            })));
           }
         }
       };
