@@ -3213,7 +3213,7 @@ var RadioQuestion = function RadioQuestion(_ref) {
         rVal = _ref2.value;
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Form"].Field, {
       key: idx
-    }, console.log(name, controlledValue, rVal, controlledValue !== null && rVal === controlledValue), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Radio"], {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Radio"], {
       label: label,
       name: name,
       value: rVal,
@@ -4895,7 +4895,7 @@ var Homepage = function Homepage(_ref) {
     }]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "Version"
-  }, "v0.0.25"));
+  }, "v0.0.26"));
 };
 
 var TheBDAForm = function TheBDAForm(props) {
@@ -8210,17 +8210,12 @@ var withUpdateStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["grap
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
-/* harmony import */ var _queries__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./queries */ "./src/graphql/queries.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_6__);
-
-
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/babel-preset-react-app/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var recompose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! recompose */ "./node_modules/recompose/dist/Recompose.esm.js");
+/* harmony import */ var _queries__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./queries */ "./src/graphql/queries.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -8230,16 +8225,16 @@ __webpack_require__.r(__webpack_exports__);
 // will change each time. By defining it statically here, react will always
 // consider this to be the same function.
 
-var debounceCall = Object(lodash__WEBPACK_IMPORTED_MODULE_6__["debounce"])(function (func) {
+var debounceCall = Object(lodash__WEBPACK_IMPORTED_MODULE_4__["debounce"])(function (func) {
   return func();
 }, 1000);
-/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_4__["compose"])( // Here's the query that gives us structure
-_queries__WEBPACK_IMPORTED_MODULE_5__["withGetStructure"], _queries__WEBPACK_IMPORTED_MODULE_5__["withUpdateStructure"], // ONCE we mount the control we should initialize it
-Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withHandlers"])({
+/* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])( // Here's the query that gives us structure
+_queries__WEBPACK_IMPORTED_MODULE_3__["withGetStructure"], _queries__WEBPACK_IMPORTED_MODULE_3__["withUpdateStructure"], // ONCE we mount the control we should initialize it
+Object(recompose__WEBPACK_IMPORTED_MODULE_2__["withHandlers"])({
   getValueProps: function getValueProps(_ref) {
     var structure = _ref.structure,
         updateStructure = _ref.updateStructure,
-        props = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_3__["default"])(_ref, ["structure", "updateStructure"]);
+        props = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["structure", "updateStructure"]);
 
     return function (name) {
       var newValProps = {
@@ -8260,35 +8255,22 @@ Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withHandlers"])({
             oldVal = structure.body[name];
           } catch (e) {}
 
-          var newObj = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, name, Object.assign({}, oldVal, {
+          var newObj = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, name, Object.assign({}, oldVal, {
             value: newVal
           }));
 
           if (structure && structure.id) {
             // Debouncing is critical so that we don't get a network call for every keystroke
-            debounceCall(
-            /*#__PURE__*/
-            Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-            /*#__PURE__*/
-            _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-              return _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-                while (1) {
-                  switch (_context.prev = _context.next) {
-                    case 0:
-                      console.log('ACTUAL CALL');
-                      _context.next = 3;
-                      return updateStructure({
-                        id: structure.id,
-                        body: Object.assign({}, structure.body, newObj)
-                      });
-
-                    case 3:
-                    case "end":
-                      return _context.stop();
-                  }
-                }
-              }, _callee, this);
-            })));
+            updateStructure({
+              id: structure.id,
+              body: Object.assign({}, structure.body, newObj)
+            }); // debounceCall(async () => {
+            //   console.log('ACTUAL CALL')
+            //   await updateStructure({
+            //     id: structure.id,
+            //     body: Object.assign({}, structure.body, newObj)
+            //   })
+            // })
           }
         },
         setNote: function setNote(newNote) {
@@ -8304,35 +8286,22 @@ Object(recompose__WEBPACK_IMPORTED_MODULE_4__["withHandlers"])({
             oldValues = structure.body[name];
           } catch (e) {}
 
-          var newObj = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, name, Object.assign({}, oldValues, {
+          var newObj = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, name, Object.assign({}, oldValues, {
             note: newNote
           }));
 
           if (structure && structure.id) {
             // Debouncing is critical so that we don't get a network call for every keystroke
-            debounceCall(
-            /*#__PURE__*/
-            Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-            /*#__PURE__*/
-            _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
-              return _Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
-                while (1) {
-                  switch (_context2.prev = _context2.next) {
-                    case 0:
-                      console.log('ACTUAL CALL');
-                      _context2.next = 3;
-                      return updateStructure({
-                        id: structure.id,
-                        body: Object.assign({}, structure.body, newObj)
-                      });
-
-                    case 3:
-                    case "end":
-                      return _context2.stop();
-                  }
-                }
-              }, _callee2, this);
-            })));
+            updateStructure({
+              id: structure.id,
+              body: Object.assign({}, structure.body, newObj)
+            }); // debounceCall(async () => {
+            //   console.log('ACTUAL CALL')
+            //   await updateStructure({
+            //     id: structure.id,
+            //     body: Object.assign({}, structure.body, newObj)
+            //   })
+            // })
           }
         }
       };
