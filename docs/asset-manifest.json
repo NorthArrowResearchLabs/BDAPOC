@@ -1,16 +1,16 @@
 {
   "main.css": "/BDAPOC/static/css/main.8143d074.chunk.css",
-  "main.js": "/BDAPOC/static/js/main.a588cb9c.chunk.js",
-  "main.js.map": "/BDAPOC/static/js/main.a588cb9c.chunk.js.map",
+  "main.js": "/BDAPOC/static/js/main.47a11efd.chunk.js",
+  "main.js.map": "/BDAPOC/static/js/main.47a11efd.chunk.js.map",
   "static/css/1.13088b6d.chunk.css": "/BDAPOC/static/css/1.13088b6d.chunk.css",
-  "static/js/1.9540b4f3.chunk.js": "/BDAPOC/static/js/1.9540b4f3.chunk.js",
-  "static/js/1.9540b4f3.chunk.js.map": "/BDAPOC/static/js/1.9540b4f3.chunk.js.map",
+  "static/js/1.84289671.chunk.js": "/BDAPOC/static/js/1.84289671.chunk.js",
+  "static/js/1.84289671.chunk.js.map": "/BDAPOC/static/js/1.84289671.chunk.js.map",
   "runtime~main.js": "/BDAPOC/static/js/runtime~main.23e79784.js",
   "runtime~main.js.map": "/BDAPOC/static/js/runtime~main.23e79784.js.map",
-  "static/media/semantic.css": "/BDAPOC/static/media/brand-icons.a1a749e8.svg",
+  "static/media/semantic.css": "/BDAPOC/static/media/flags.9c74e172.png",
   "static/css/main.8143d074.chunk.css.map": "/BDAPOC/static/css/main.8143d074.chunk.css.map",
   "static/css/1.13088b6d.chunk.css.map": "/BDAPOC/static/css/1.13088b6d.chunk.css.map",
   "index.html": "/BDAPOC/index.html",
-  "precache-manifest.5045279a491038ca25af515589571139.js": "/BDAPOC/precache-manifest.5045279a491038ca25af515589571139.js",
+  "precache-manifest.d70e7453e0cb060e8961ea7d20b955b4.js": "/BDAPOC/precache-manifest.d70e7453e0cb060e8961ea7d20b955b4.js",
   "service-worker.js": "/BDAPOC/service-worker.js"
 }

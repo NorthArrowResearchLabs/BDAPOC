@@ -3213,7 +3213,7 @@ var RadioQuestion = function RadioQuestion(_ref) {
         rVal = _ref2.value;
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Form"].Field, {
       key: idx
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Radio"], {
+    }, console.log(name, controlledValue, rVal, controlledValue !== null && rVal === controlledValue), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Radio"], {
       label: label,
       name: name,
       value: rVal,
@@ -3298,7 +3298,7 @@ var TextField = function TextField(_ref) {
   var label = _ref.label,
       placeholder = _ref.placeholder,
       type = _ref.type,
-      controlledValue = _ref.controlledValue,
+      value = _ref.value,
       setValue = _ref.setValue;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Segment"], {
     basic: true,
@@ -3307,7 +3307,7 @@ var TextField = function TextField(_ref) {
     as: "h3"
   }, label), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Form"].Field, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Input"], {
     type: type,
-    value: controlledValue,
+    defaultValue: value,
     placeholder: placeholder,
     onChange: function onChange(e, _ref2) {
       var newval = _ref2.value;
@@ -3336,23 +3336,16 @@ var Present = function Present(_ref3) {
 /* harmony default export */ __webpack_exports__["default"] = (Object(recompose__WEBPACK_IMPORTED_MODULE_2__["compose"])(Object(recompose__WEBPACK_IMPORTED_MODULE_2__["branch"])(function (_ref4) {
   var present = _ref4.present;
   return !!present;
-}, Object(recompose__WEBPACK_IMPORTED_MODULE_2__["renderComponent"])(Present)), Object(recompose__WEBPACK_IMPORTED_MODULE_2__["withStateHandlers"])(function (_ref5) {
-  var value = _ref5.value;
-  return {
-    controlledValue: value
-  };
-}, {
-  setValue: function setValue(state, _ref6) {
-    var _setValue = _ref6.setValue;
-    return function (newVal) {
-      _setValue(newVal);
-
-      return {
-        controlledValue: newVal
-      };
-    };
-  }
-}))(TextField));
+}, Object(recompose__WEBPACK_IMPORTED_MODULE_2__["renderComponent"])(Present)) // withStateHandlers(
+//   ({ value }) => ({ controlledValue: value }),
+//   {
+//     setValue: (state, { setValue }) => (newVal) => {
+//       setValue(newVal)
+//       return { controlledValue: newVal }
+//     }
+//   }
+// )
+)(TextField));
 
 /***/ }),
 
@@ -8088,10 +8081,6 @@ var withCreateStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["grap
       data.listBDAPOCS.items = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(data.listBDAPOCS.items.filter(function (struct) {
         return !createBDAPOC || struct.id !== createBDAPOC.id;
       })).concat([createBDAPOC]);
-      console.log('update', {
-        data: data,
-        createBDAPOC: createBDAPOC
-      });
       proxy.writeQuery({
         query: query,
         data: data
@@ -8170,7 +8159,8 @@ var withUpdateStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["grap
       var query = QueryListStructures;
       var data = proxy.readQuery({
         query: query
-      });
+      }); // console.log('updateBDAPOC', data.listBDAPOCS, updateBDAPOC)
+
       data.listBDAPOCS.items = Object(_Users_matt_Work_Git_Anabranch_beaver_node_modules_babel_preset_react_app_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(data.listBDAPOCS.items.filter(function (struct) {
         return !updateBDAPOC || struct.id !== updateBDAPOC.id;
       })).concat([updateBDAPOC]);
@@ -8192,7 +8182,7 @@ var withUpdateStructure = Object(react_apollo__WEBPACK_IMPORTED_MODULE_4__["grap
               lastEdit: Math.round(new Date().getTime() / 1000)
             })
           },
-          debug: console.log(structure),
+          // debug: console.log('updateBDAPOC', structure),
           optimisticResponse: function optimisticResponse() {
             return {
               __typename: 'Mutation',
